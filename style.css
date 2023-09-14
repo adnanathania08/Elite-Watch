@@ -300,3 +300,98 @@
     height: 65%;
   }
 }
+@media (max-width: 420px) {
+  .main-container .nav-bar {
+    align-items: center;
+    position: fixed;
+    height: 16vw;
+  }
+  .main-container .nav-bar .logo .ri-lock-unlock-fill {
+    font-size: 8vw;
+  }
+  .main-container .nav-bar .logo h2 {
+    font-size: 8vw;
+    font-weight: 900;
+  }
+  .main-container .nav-bar .nav-contents {
+    display: none;
+  }
+  .main-container .nav-bar .ri-menu-3-fill {
+    display: block;
+    font-size: 8vw;
+    font-weight: 900;
+    color: #A1CCD1;
+  }
+  .main-container .nav-bar .ri-menu-3-fill:hover {
+    text-shadow: 1.5px 1.5px 5px gray;
+    transition: 0.5s;
+  }
+  .main-container .hero-container {
+    padding-top: 20vw;
+    flex-direction: column;
+  }
+  .main-container .hero-container .left {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .main-container .hero-container .left li {
+    font-size: 12vw;
+  }
+  .main-container .hero-container .left button {
+    margin-top: 8vw;
+    font-size: 6vw;
+    padding: 5vw 7vw;
+    border-radius: 8vw;
+  }
+  .main-container .hero-container .right {
+    padding-top: 6vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .main-container .hero-container .right img {
+    width: 80%;
+    height: 80%;
+  }
+  .main-container .third-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-container .third-container .three-cards {
+    height: 60vw;
+    width: 60vw;
+    padding: 4vw;
+    margin-bottom: 2vw;
+    border-radius: 5vw;
+  }
+  .main-container .third-container .three-cards .in-content .up-cntnt {
+    gap: 2vw;
+  }
+  .main-container .third-container .three-cards .in-content .up-cntnt i {
+    font-size: 5vw;
+    padding: 2.5vw;
+    border-radius: 5.5vw;
+  }
+  .main-container .third-container .three-cards .in-content .up-cntnt h3 {
+    font-size: 5vw;
+  }
+  .main-container .third-container .three-cards .in-content .dwn-cntnt {
+    padding-top: 3vw;
+  }
+  .main-container .third-container .three-cards .in-content .dwn-cntnt li {
+    font-size: 3vw;
+    line-height: 1.8;
+  }
+  .main-container .fourth-container {
+    flex-direction: column;
+  }
+  .main-container .fourth-container .left-image {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container .fourth-container .left-image img {
+    width: 65%;
+    height: 65%;
+  }
+}
