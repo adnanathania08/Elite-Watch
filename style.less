@@ -1,4 +1,4 @@
-// ------colors-----
+// --------------colors-----------------
 @wht: #fff;
 @blck:	#505050;
 @l-blu: #A1CCD1;
@@ -7,7 +7,7 @@
 @teal: #64CCC5;
 
 
-//-------- fonts------
+//---------------- fonts------------------
 @monst: 'Montserrat';
 @lobst: 'Lobster';
 @eczar: 'Eczar';
@@ -20,13 +20,15 @@
     box-sizing: border-box;
 
 }
-
+//--------------------MAIN CONTAINER-------------------
 .main-container {
     width: 90%;
     height: 100%;
     margin: 0 auto;
     // border: 1px solid black;
 
+
+    //----------------NAV-BAR----------------------------
     .nav-bar {
         width: 90%;
         height: 8vw;
@@ -102,6 +104,7 @@
         }
     }
 
+    //--------------------HERO SECTION--------------------------
     .hero-container {
         padding-top: 6vw;
         list-style-type: none;
@@ -151,6 +154,7 @@
         }
     }
 
+    //---------------------THIRD CONTAINER------------------------
     .third-container {
         display: flex;
         justify-content: space-around;
@@ -211,51 +215,16 @@
                 }
     
             }
-            
-            // .up-cntnt {
-            //     display: flex;
-            //     align-items: center;
-            //     gap: 1.5vw; 
-            //     text-align: center;
-            //     margin: 0;               
-            //     i {
-            //         background-color: #505050;
-            //         color: @wht;
-            //         padding: 1.5vw;
-            //         border-radius: 5vw;
-            //         font-size: 1.5vw;
-            //         font-weight: 500;
-            //     }
-            //     h3 {
-            //         font-family: @popins;
-            //         font-weight: 800;
-            //         color: #505050;
-            //         font-size: 2vw;
-
-            //     }
-            // }
-
-            // .dwn-cntnt {
-            //     list-style-type: none;
-            //     padding-top: 1.5vw;
-            //     li {
-            //         font-size: 1.4vw;
-            //         font-family: @monst;
-            //         font-weight: 600;
-            //         color: #505050;
-            //         line-height: 1.5;
-
-            //     }
-            // }
-
-
         }
 
     }
 
+    //--------------------FOURTH CONTAINER-------------------------
     .fourth-container {
         padding-top: 6vw;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         .left-image {
             width: 45%;
             height: 100%;
@@ -268,12 +237,11 @@
         .right-text {
             list-style-type: none;
             background-color: #A1CCD1;
-            width: 55%;
+            width: 45%;
             height: 100%;
             display: flex;
             flex-direction: column;
-            padding: 8vw;
-            margin-top: 2vw;
+            padding: 6vw;
             border-radius: 6vw;
             
             h2 {
@@ -290,27 +258,31 @@
                 line-height: 1.8;
             }
             &:hover {
-                background-color: #83b9bee7;
+                // background-color: #83b9bee7;
                 transition: all 0.3s ease-in-out;
+                box-shadow: 0px 0px 10px grey;
             }
 
         }
         
     }
+   
+ //--------------------FIFTH CONTAINER----------------   
+    .fifth-container {
 
-
-
-
-
+        
+    }
 
 }
 
 
 
-// --------MEDIA QUERIES---------
+// --------------------------MEDIA QUERIES FOR 600PX------------------------------
 
 @media (max-width:600px) {
 
+
+    //------------MAIN CONTAINER 600PX----------------------
     .main-container {
 
         .nav-bar {
@@ -343,7 +315,7 @@
                 }
             }
         }
-
+//-----------------HERO SECTION 600PX------------------------
         .hero-container {
             padding-top: 12vw;
             flex-direction: column;
@@ -374,7 +346,7 @@
                 }
             }
         }
-
+//-----------------THIRD CONTAINER 600PX-----------------------
         .third-container {
             flex-direction: column;
             align-items: center;
@@ -382,7 +354,7 @@
                 height: 60vw;
                 width: 60vw;
                 padding: 4vw;
-                margin-bottom: 2vw;
+                margin-top: 10vw;
                 border-radius: 5vw;
                 .in-content {
                     
@@ -410,33 +382,55 @@
             }
         }
 
+//----------------------FOURTH CONATINER 600PX-------------
         .fourth-container {
 
             flex-direction: column;
+            text-align: center;
+            padding-top: 8vw;
 
             .left-image {
                 width: 100%;
                 height: 100%;
                 img {
-                    width: 65%;
-                    height: 65%;
+                    width: 80%;
+                    height: 80%;
                 }
             }
+
+            .right-text {
+                height: 100%;
+                width: 90%;
+                text-align: center;
+                border-radius: 8vw;
+                margin-top: 8vw;
+                h2 {
+                    font-size: 6vw;
+                }
+                li {
+                    font-size: 3vw;
+                }
+            }
+
+            
         }
 
     }
     
 }
 
+//-------------------------MEDIA QUERIES FOR 420 PX----------------------
+
 
 @media (max-width:420px) {
 
+    //-----------------MAIN CONTAINER 420PX------------
     .main-container {
 
         .nav-bar {
             align-items: center;
             position: fixed;
-            height: 16vw;
+            height: 18vw;
 
             .logo {
                 .ri-lock-unlock-fill {
@@ -444,7 +438,7 @@
                 }
     
                 h2 {
-                    font-size: 8vw;
+                    font-size: 9vw;
                     font-weight: 900;
                 }
             }
@@ -454,7 +448,7 @@
             }
             .ri-menu-3-fill {
                 display: block;
-                font-size: 8vw;
+                font-size: 9vw;
                 font-weight: 900;
                 color: @l-blu;
                 &:hover {
@@ -464,8 +458,9 @@
             }
         }
 
+        //-----------------HERO CONTAINER 420PX-----------------
         .hero-container {
-            padding-top: 20vw;
+            padding-top: 26vw;
             flex-direction: column;
              // align-items: normal;
             .left {
@@ -473,11 +468,11 @@
                 height: 100%;
                 text-align: center;
                 li {
-                    font-size: 12vw;
+                    font-size: 14vw;
 
                 }
                 button {
-                    margin-top: 8vw;
+                    margin-top: 10vw;
                     font-size: 6vw;
                     padding: 5vw 7vw;
                     border-radius: 8vw;
@@ -487,23 +482,24 @@
             }
 
             .right {
-                padding-top: 6vw;
+                padding-top: 8vw;
                 width: 100%;
                 height: 100%;
                 text-align: center;
                 img {
-                    width: 80%;
-                    height: 80%;
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }
 
+        //------------------THIRD-CONTAINER 420PX------------------
         .third-container {
             flex-direction: column;
             align-items: center;
             .three-cards {
-                height: 60vw;
-                width: 60vw;
+                height: 80vw;
+                width: 80vw;
                 padding: 4vw;
                 margin-bottom: 2vw;
                 border-radius: 5vw;
@@ -511,21 +507,21 @@
                     
                     
                     .up-cntnt {
-                        gap: 2vw;
+                        gap: 4vw;
                         i {
-                            font-size: 5vw;
+                            font-size: 8vw;
                             padding: 2.5vw;
-                            border-radius: 5.5vw;
+                            border-radius: 7vw;
                         }
                         h3 {
-                            font-size: 5vw;
+                            font-size: 7vw;
                         }
 
                     }
                     .dwn-cntnt {
-                        padding-top: 3vw;
+                        padding-top: 4vw;
                         li {
-                            font-size: 3vw;
+                            font-size: 4vw;
                             line-height: 1.8;
                         }
                     }
@@ -533,16 +529,28 @@
             }
         }
 
+        //----------------FOURTH CONTAINER 420PX-------------
         .fourth-container {
 
             flex-direction: column;
-
+            padding-top: 8vw;
             .left-image {
                 width: 100%;
                 height: 100%;
                 img {
-                    width: 65%;
-                    height: 65%;
+                    width: 85%;
+                    height: 85%;
+                }
+            }
+
+            .right-text {
+                height: 100%;
+                width: 100%;
+                h2 {
+                    font-size: 8vw;
+                }
+                li {
+                    font-size: 3.5vw;
                 }
             }
         }
