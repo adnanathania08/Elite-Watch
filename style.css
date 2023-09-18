@@ -50,11 +50,13 @@
   gap: 3.5vw;
   align-items: center;
 }
-.main-container .nav-bar .nav-contents h3 {
+.main-container .nav-bar .nav-contents h3 a {
   font-size: 1.3vw;
   font-weight: 700;
+  text-decoration: none;
+  color: #505050;
 }
-.main-container .nav-bar .nav-contents h3:hover {
+.main-container .nav-bar .nav-contents h3 a:hover {
   color: #176B87;
   transition: all 0.3s ease-in-out;
   text-decoration: underline #176B87;
@@ -134,8 +136,10 @@
   box-shadow: 0px 0px 5px 1px #E9E5D9;
 }
 .main-container .third-container .three-cards:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 4px #E9E5D9;
   background-color: #E9E5D9;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in;
 }
 .main-container .third-container .three-cards .in-content .up-cntnt {
   display: flex;
@@ -400,15 +404,15 @@
   gap: 1vw;
 }
 .main-container .sixth-container .socials .social-icons i {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   padding: 1.2vw;
   font-size: 1.8vw;
   border-radius: 5vw;
 }
 .main-container .sixth-container .socials .social-icons i:hover {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
   transition: all 0.5s ease-in-out;
 }
 .main-container .sixth-container .links {
@@ -416,6 +420,7 @@
   height: 100%;
   list-style-type: none;
   text-align: center;
+  padding-right: 2vw;
 }
 .main-container .sixth-container .links h2 {
   font-size: 2.5vw;
@@ -424,7 +429,7 @@
 .main-container .sixth-container .links .navigations {
   display: flex;
   justify-content: space-around;
-  padding-top: 1.5vw;
+  padding-top: 1.7vw;
 }
 .main-container .sixth-container .links .navigations li {
   font-size: 1.5vw;
@@ -444,7 +449,7 @@
 .main-container .sixth-container .office h2 {
   font-size: 2.5vw;
   font-family: 'Montserrat';
-  padding-bottom: 1.5vw;
+  padding-bottom: 1.4vw;
 }
 .main-container .sixth-container .office .address {
   display: flex;
