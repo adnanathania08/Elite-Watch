@@ -1,16 +1,17 @@
 // --------------colors-----------------
 @wht: #fff;
-@blk:#000;
+@blk: #000;
 @drk-blu: #053B50;
 @med-blu: #176B87;
 @v-blu: #64CCC5;
-@p-blu:#3B4D57;
+@p-blu: #3B4D57;
 @orange: #EE6C32;
 @drk-orange: #B54F27;
 @lgt-beige: #E9E5D9;
 @dark-gray: #505050;
 @sky-blu: #A1CCD1;
 @blu-grn: #3B4D57;
+
 
 //---------------- fonts------------------
 @monst: 'Montserrat';
@@ -26,11 +27,13 @@
 
 }
 
-//---------------------------------NAV BAR--------------------------------------------------
+//--------------------------------NAV BAR--------------------------------------------------
+
 .nav-container {
     margin: 0 auto;
     width: 95%;
     height: 100%;
+
     .nav-bar {
         width: 95%;
         height: 8vw;
@@ -44,58 +47,58 @@
         font-family: @monst;
         position: fixed;
         z-index: 1000;
-    
+
         .logo {
             display: flex;
             align-items: center;
             gap: 0.5vw;
-    
+
             .ri-lock-unlock-fill {
                 font-size: 2.5vw;
                 color: @drk-blu;
-    
+
                 &:hover {
                     text-shadow: 1.5px 1.5px 5px gray;
                     transition: all 0.5s ease-in-out;
                 }
-    
+
             }
-    
+
             h2 {
                 font-size: 3vw;
                 font-family: @lobst;
                 font-weight: 800;
                 color: @drk-blu;
-    
+
                 &:hover {
                     text-shadow: 1.5px 1.5px 5px gray;
                     transition: all 0.5s ease-in-out;
                 }
-    
+
             }
         }
-    
+
         .nav-contents {
             display: flex;
             gap: 3.5vw;
             align-items: center;
-    
+
             h3 {
                 a {
                     font-size: 1.3vw;
                     font-weight: 700;
                     text-decoration: none;
                     color: @dark-gray;
-    
+
                     &:hover {
                         color: @med-blu;
                         transition: all 0.3s ease-in-out;
                         text-decoration: underline @med-blu;
                     }
-    
+
                 }
             }
-    
+
             button {
                 padding: 1vw 2vw;
                 font-size: 1.3vw;
@@ -104,94 +107,235 @@
                 background-color: @sky-blu;
                 color: @wht;
                 border-radius: 25px;
-    
+
                 &:hover {
                     background-color: @drk-blu;
                     transition: all 0.3s ease-in-out;
                 }
-    
+
             }
         }
-    
+
         .ri-menu-3-fill {
             display: none;
         }
     }
-    
+
 }
-//--------------------SERVICE CONTAINER--------------------
-.service-container {
-    height: 100%;
+
+
+//-----------------------ABOUT-CONTAINER----------------------
+.about-container {
     width: 95%;
+    height: 100%;
     margin: 0 auto;
-    text-align: center;
     padding-top: 10vw;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-sec {
+        width: 50%;
+
+        h3 {
+            font-size: 1.3vw;
+            font-weight: 800;
+            color: @orange;
+            font-family: @monst;
+            padding-bottom: 1vw;
+
+        }
+
+        h1 {
+            font-size: 3vw;
+            font-weight: 900;
+            font-family: @popins;
+            color: @drk-blu;
+            line-height: 3.5vw;
+
+        }
+
+        h4 {
+            padding-top: 1vw;
+
+            li {
+                font-size: 1.3vw;
+                font-family: @monst;
+                color: @dark-gray;
+                line-height: 1.5;
+
+            }
+        }
+
+        .since {
+            padding-top: 3vw;
+
+            .experience {
+                display: flex;
+                padding-bottom: 2vw;
+
+                .num {
+                    width: 8vw;
+                    font-size: 3vw;
+                    background: #B54F27;
+                    background: linear-gradient(to bottom left, #B54F27 0%, #A1CCD1 50%, #176B87 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 600;
+                    font-family: @popins;
+
+                    &:hover {
+                        transform: scale(1.08);
+                        transition: all 0.4s ease-in;
+
+                    }
+                }
+
+                .content {
+                    font-family: @monst;
+                    padding-left: 2vw;
+
+                    h2 {
+                        font-size: 2vw;
+                        padding-bottom: 1vw;
+                    }
+
+                    li {
+                        font-size: 1.3vw;
+                        color: @dark-gray;
+                    }
+                }
+            }
+        }
+    }
+
+    .right-sec {
+        width: 47%;
+        height: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 3vw;
+            // &:hover {
+            //     transform: scale(1.02);
+            //     transition: all 0.4s ease-in;
+            // }
+        }
+    }
+}
+
+//----------------------BLOG CONTAINER-------------------
+
+.blog-container {
+    width: 95%;
+    height: 100%;
+    background-color: @lgt-beige;
+    margin: 0 auto;
+    border-radius: 3.5vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    margin-top: 10vw;
+
     h3 {
         font-size: 1.3vw;
         font-weight: 800;
         color: @orange;
         font-family: @monst;
+        text-align: center;
         padding-bottom: 1vw;
-    
     }
+
     h1 {
         font-size: 3vw;
         font-weight: 900;
         font-family: @popins;
         color: @drk-blu;
-        line-height: 3.5vw;
-    }
-    h4 {
-        padding-top: 1vw;
-        font-size: 1.3vw;
-        font-family: @monst;
-        color: @dark-gray;
+        text-align: center;
     }
 
-    .service-cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.8vw;
-        padding-top: 3.5vw;
-        .s-cards {
-            border: 1px solid bisque;
-            border-radius: 4vw;
-            padding: 4vw 3vw;
+    .blog-cards {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2vw;
+
+        .cards {
+            width: 28%;
+            height: 100%;
             background-color: @wht;
-            i {
-                background-color: @dark-gray;
-                color: @wht;
-                padding: 1.4vw;
-                border-radius: 5vw;
-                font-size: 1.8vw;
-                font-weight: 500;
+            padding: 2vw 1.5vw;
+            border-radius: 2vw;
+
+            .image {
+                height: 100%;
+
+                img {
+                    border-top-right-radius: 1.5vw;
+                    border-top-left-radius: 1.5vw;
+                    width: 100%;
+                    height: 100%;
+                }
             }
+
+            .admin {
+                display: flex;
+                list-style-type: none;
+                padding-top: 1vw;
+
+                .text {
+                    display: flex;
+                    padding-right: 4vw;
+                    align-items: center;
+
+                    i {
+                        font-size: 1.8vw;
+                        padding-right: 0.6vw;
+                        color: @dark-gray;
+                    }
+
+                    li {
+                        font-family: @monst;
+                        font-size: 1.3vw;
+                        color: @dark-gray;
+                    }
+                }
+            }
+
             h3 {
-                margin-top: 2vw;
                 font-family: @popins;
                 font-weight: 800;
                 color: @dark-gray;
                 font-size: 2vw;
+                text-align: left;
+                padding-top: 1vw;
             }
-            li {
-                list-style-type: none;
+
+            p {
+                font-size: 1.3vw;
+                color: @dark-gray;
+                font-family: @monst;
+                padding-top: 1vw;
+                padding-bottom: 1vw;
+            }
+
+            a {
+                text-decoration: none;
                 font-size: 1.3vw;
                 font-family: @monst;
-                color: @dark-gray;
-                line-height: 1.5;
-            }
-            &:hover {
-                transform: scale(1.02);
-                box-shadow: 0px 0px 5px 4px @lgt-beige;
-                background-color: @lgt-beige;
-                transition: all 0.3s ease-in;
+                color: @orange;
+
+                &:hover {
+                    color: @drk-orange;
+                    transition: all 0.3s ease-in;
+                }
             }
         }
     }
-
 }
 
-//----------------FOOTER CONTAINER-----------------------------------
+
+//--------------------FOOTER CONTAINER-----------------------
 
 .footer-container {
     display: flex;
@@ -204,18 +348,22 @@
     border-radius: 4vw;
     margin: 0 auto;
     margin-top: 6vw;
+
     .socials {
         width: 45%;
         height: 100%;
+
         .logo {
             display: flex;
             align-items: center;
             gap: 0.5vw;
             padding-bottom: 1.5vw;
+
             i {
                 font-size: 2vw;
                 color: @drk-blu;
             }
+
             h2 {
                 font-size: 2.5vw;
                 font-family: @lobst;
@@ -223,9 +371,11 @@
                 color: @drk-blu;
             }
         }
+
         .text {
             list-style-type: none;
             padding-bottom: 1.5vw;
+
             li {
                 font-size: 1.5vw;
                 font-family: @monst;
@@ -233,15 +383,18 @@
                 line-height: 1.8;
             }
         }
+
         .social-icons {
             display: flex;
             gap: 1vw;
+
             i {
                 background-color: @blk;
                 color: @wht;
                 padding: 1.2vw;
                 font-size: 1.8vw;
                 border-radius: 5vw;
+
                 &:hover {
                     background-color: @wht;
                     color: @blk;
@@ -258,19 +411,23 @@
         list-style-type: none;
         text-align: center;
         padding-right: 2vw;
+
         h2 {
             font-size: 2.5vw;
             font-family: @monst;
         }
+
         .navigations {
             display: flex;
             justify-content: space-around;
             padding-top: 1.7vw;
+
             li {
                 font-size: 1.5vw;
                 font-family: @monst;
                 line-height: 2.5;
                 font-weight: 700;
+
                 &:hover {
                     color: @drk-orange;
                     transition: all 0.5s ease-in-out;
@@ -279,6 +436,7 @@
             }
         }
     }
+
     .office {
         width: 27%;
         height: 100%;
@@ -295,15 +453,18 @@
             line-height: 2;
             font-family: @monst;
             align-items: center;
+
             i {
                 font-size: 2vw;
                 padding-right: 1vw;
+
                 &:hover {
                     color: @orange;
                     transition: all 0.5s ease-in-out;
                 }
 
             }
+
             li {
                 font-size: 1.5vw;
                 font-weight: 700;
@@ -313,12 +474,11 @@
 
 }
 
-//--------------MEDIA QUERIES FOR 600PX--------------------
+//-----------------------MEDIA QUERIES FOR 600PX-----------------
 
 @media (max-width:600px) {
 
-    //-----------------NAV-CONTAINER 600PX---------------------
-
+    //---------------------NAV CONTAINER 600PX------------------
     .nav-container {
 
         .nav-bar {
@@ -356,78 +516,205 @@
 
     }
 
-    //----------------SERVICE CONTAINER 600PX------------------------
+    //---------------------ABOUT CONTAINER 600PX--------------------------
 
-    .service-container {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding-top: 18vw;
+
+        .left-sec {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            h3 {
+                font-size: 3vw;
+                padding-bottom: 1.5vw;
+
+            }
+
+            h1 {
+                font-size: 6vw;
+                line-height: 6.5vw;
+                padding-bottom: 1.5vw;
+
+            }
+
+            h4 {
+                li {
+                    font-size: 2.5vw;
+                    padding-bottom: 1vw;
+
+                }
+            }
+
+            .since {
+                width: 100%;
+                padding-top: 4vw;
+
+                .experience {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding-bottom: 4vw;
+
+                    .num {
+                        width: 100%;
+                        font-size: 9vw;
+                    }
+
+                    .content {
+                        padding-left: 0;
+
+                        h2 {
+                            font-size: 6vw;
+                            padding-bottom: 2vw;
+                        }
+
+                        li {
+                            font-size: 3vw;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .right-sec {
+            width: 100%;
+            height: 100%;
+            padding-top: 4vw;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    //--------------------------------BLOG CONTAINER 600PX------------------
+
+    .blog-container {
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+        border-radius: 5vw;
+        margin-top: 10vw;
+
         h3 {
             font-size: 3vw;
             padding-bottom: 1.5vw;
         }
+
         h1 {
             font-size: 6vw;
-            line-height: 6.5vw;
             padding-bottom: 1.5vw;
         }
-        h4 {
-            font-size: 2.5vw;
-            padding-bottom: 1.5vw;
-        }
-        .service-cards {
+
+        .blog-cards {
             display: flex;
             flex-direction: column;
-            width: 100%;
-            height: 100%;
-            align-items: center;
             justify-content: center;
-            .s-cards {
-                padding: 6vw;
+            align-items: center;
+
+            .cards {
                 width: 90%;
-                margin-bottom: 3vw;
-                i {
-                    font-size: 5vw;
-                    padding: 2.5vw;
+                margin-top: 4vw;
+                padding: 4vw 3vw;
+                border-radius: 3.5vw;
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-top-right-radius: 2vw;
+                        border-top-left-radius: 2vw;
+
+                    }
                 }
+
+                .admin {
+                    padding-top: 2vw;
+
+                    .text {
+                        padding-right: 12vw;
+
+                        i {
+                            font-size: 4vw;
+                            padding-right: 1vw;
+                        }
+
+                        li {
+                            font-size: 3vw;
+                        }
+                    }
+
+                }
+
                 h3 {
-                    font-size: 5vw;
-                    margin-top: 3vw;
+                    font-size: 4vw;
+                    padding-bottom: 1.5vw;
+                    padding-top: 2vw;
                 }
-                li {
+
+                p {
+                    font-size: 3vw;
+                    padding-bottom: 2vw;
+                }
+
+                a {
                     font-size: 3vw;
                 }
-    
             }
         }
     }
 
     //---------------FOOTER CONTAINER FOR 600PX---------------------------
-  
+
     .footer-container {
         display: flex;
         flex-direction: column;
         padding: 6vw;
+
         .socials {
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
+
             .logo {
                 padding-bottom: 2.5vw;
+
                 i {
                     font-size: 6vw;
                 }
+
                 h2 {
                     font-size: 6vw;
                 }
             }
+
             .text {
                 padding-bottom: 2.5vw;
                 text-align: center;
+
                 li {
                     font-size: 3vw;
                 }
             }
+
             .social-icons {
                 i {
                     font-size: 5vw;
@@ -440,13 +727,16 @@
             height: 100%;
             width: 100%;
             margin-top: 6vw;
+
             h2 {
                 font-size: 5.5vw;
             }
+
             .navigations {
                 width: 55%;
                 margin: 0 auto;
                 padding-top: 3.5vw;
+
                 li {
                     font-size: 3vw;
                     line-height: 3;
@@ -467,30 +757,29 @@
             h2 {
                 font-size: 5.5vw;
             }
+
             .address {
 
                 i {
                     font-size: 6vw;
                     padding-right: 2vw;
                 }
+
                 li {
                     font-size: 3vw;
                 }
             }
-        }   
+        }
     }
 
 
-    
 }
 
-
-//--------------------MEDIA QUERIES FOR 420PX-----------------------------
-
+//-------------------------MEDIA QUERIES FOR 420PX---------------------------------
 
 @media (max-width:420px) {
 
-    //-----------------NAV-CONTAINER 420PX---------------------
+    //-------------------------NAV CONTAINER 420PX---------------------
 
     .nav-container {
 
@@ -529,71 +818,184 @@
 
     }
 
-    //----------------SERVICE CONTAINER 420PX------------------------
+    //-----------------ABOUT CONTAINER 420PX-------------------------------
 
-    .service-container {
+    .about-container {
         padding-top: 22vw;
-        h3 {
-            font-size: 3.5vw;
-            padding-bottom: 1.5vw;
-        }
-        h1 {
-            font-size: 9vw;
-            line-height: 10vw;
-            padding-bottom: 2vw;
-        }
-        h4 {
-            font-size: 4vw;
-            padding-bottom: 2vw;
-        }
-        .service-cards {
+
+        .left-sec {
             width: 100%;
             height: 100%;
-            align-items: center;
-            justify-content: center;
-            .s-cards {
-                padding: 9vw;
-                width: 90%;
-                margin-bottom: 4vw;
-                border-radius: 6vw;
-                i {
-                    font-size: 8vw;
-                    padding: 2.5vw;
-                    border-radius: 7vw;
-                }
-                h3 {
-                    font-size: 7vw;
-                    line-height: 1;
-                    margin-top: 4vw;
-                }
+
+            h3 {
+                font-size: 4vw;
+                padding-bottom: 1.5vw;
+
+            }
+
+            h1 {
+                font-size: 9vw;
+                line-height: 10vw;
+                padding-bottom: 2vw;
+
+            }
+
+            h4 {
                 li {
                     font-size: 4vw;
+                    padding-bottom: 2vw;
+
                 }
-    
+            }
+
+            .since {
+                width: 100%;
+                padding-top: 5vw;
+
+                .experience {
+                    padding-bottom: 5vw;
+
+                    .num {
+                        width: 100%;
+                        font-size: 12vw;
+                    }
+
+                    .content {
+                        padding-left: 0;
+
+                        h2 {
+                            font-size: 8vw;
+                            padding-bottom: 2vw;
+                        }
+
+                        li {
+                            font-size: 4vw;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .right-sec {
+            width: 100%;
+            height: 100%;
+            padding-top: 5vw;
+
+            img {
+                height: 100%;
+                width: 100%;
             }
         }
     }
-    //---------FOOTER CONTAINER FOR 420PX-----------------------
+
+    //-----------------------BLOG CONTAINER 420PX----------------
+
+    .blog-container {
+        padding-top: 8vw;
+        padding-bottom: 6vw;
+        border-radius: 5vw;
+        margin-top: 10vw;
+
+        h3 {
+            font-size: 4vw;
+            padding-bottom: 1.5vw;
+        }
+
+        h1 {
+            font-size: 7vw;
+            padding-bottom: 1.5vw;
+        }
+
+        .blog-cards {
+
+            .cards {
+                width: 91%;
+                margin-top: 5vw;
+                padding: 4.5vw 3vw;
+                border-radius: 3.8vw;
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-top-right-radius: 2.2vw;
+                        border-top-left-radius: 2.2vw;
+
+                    }
+                }
+
+                .admin {
+                    padding-top: 2.2vw;
+
+                    .text {
+                        padding-right: 14vw;
+
+                        i {
+                            font-size: 5vw;
+                            padding-right: 1vw;
+                        }
+
+                        li {
+                            font-size: 4vw;
+                        }
+                    }
+
+                }
+
+                h3 {
+                    font-size: 5vw;
+                    padding-bottom: 1.8vw;
+                    padding-top: 3vw;
+                }
+
+                p {
+                    font-size: 4vw;
+                    padding-bottom: 3vw;
+                }
+
+                a {
+                    font-size: 4vw;
+                }
+            }
+        }
+    }
+
+
+
+
+    //--------------------FOOTER COTAINER 420PX---------------------------
+
     .footer-container {
         padding: 6vw;
+        margin-top: 8vw;
         .socials {
             width: 100%;
             height: 100%;
+
             .logo {
                 padding-bottom: 3.5vw;
+
                 i {
                     font-size: 9vw;
                 }
+
                 h2 {
                     font-size: 9vw;
                 }
             }
+
             .text {
                 padding-bottom: 3.5vw;
+
                 li {
                     font-size: 4.5vw;
                 }
             }
+
             .social-icons {
                 i {
                     font-size: 6.5vw;
@@ -607,13 +1009,16 @@
             height: 100%;
             width: 100%;
             margin-top: 9vw;
+
             h2 {
                 font-size: 6.5vw;
             }
+
             .navigations {
                 width: 65%;
                 margin: 0 auto;
                 padding-top: 4vw;
+
                 li {
                     font-size: 4vw;
                     line-height: 3;
@@ -630,21 +1035,20 @@
             h2 {
                 font-size: 6.5vw;
             }
+
             .address {
 
                 i {
                     font-size: 7vw;
                     padding-right: 2.4vw;
                 }
+
                 li {
                     font-size: 4vw;
                 }
             }
-        }   
+        }
     }
 
 
 }
-
-    
-

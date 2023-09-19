@@ -77,71 +77,173 @@
 .nav-container .nav-bar .ri-menu-3-fill {
   display: none;
 }
-.service-container {
-  height: 100%;
+.about-container {
   width: 95%;
+  height: 100%;
   margin: 0 auto;
-  text-align: center;
   padding-top: 10vw;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.service-container h3 {
+.about-container .left-sec {
+  width: 50%;
+}
+.about-container .left-sec h3 {
   font-size: 1.3vw;
   font-weight: 800;
   color: #EE6C32;
   font-family: 'Montserrat';
   padding-bottom: 1vw;
 }
-.service-container h1 {
+.about-container .left-sec h1 {
   font-size: 3vw;
   font-weight: 900;
   font-family: 'Poppins';
   color: #053B50;
   line-height: 3.5vw;
 }
-.service-container h4 {
+.about-container .left-sec h4 {
   padding-top: 1vw;
-  font-size: 1.3vw;
-  font-family: 'Montserrat';
-  color: #505050;
 }
-.service-container .service-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.8vw;
-  padding-top: 3.5vw;
-}
-.service-container .service-cards .s-cards {
-  border: 1px solid bisque;
-  border-radius: 4vw;
-  padding: 4vw 3vw;
-  background-color: #fff;
-}
-.service-container .service-cards .s-cards i {
-  background-color: #505050;
-  color: #fff;
-  padding: 1.4vw;
-  border-radius: 5vw;
-  font-size: 1.8vw;
-  font-weight: 500;
-}
-.service-container .service-cards .s-cards h3 {
-  margin-top: 2vw;
-  font-family: 'Poppins';
-  font-weight: 800;
-  color: #505050;
-  font-size: 2vw;
-}
-.service-container .service-cards .s-cards li {
-  list-style-type: none;
+.about-container .left-sec h4 li {
   font-size: 1.3vw;
   font-family: 'Montserrat';
   color: #505050;
   line-height: 1.5;
 }
-.service-container .service-cards .s-cards:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 0px 5px 4px #E9E5D9;
+.about-container .left-sec .since {
+  padding-top: 3vw;
+}
+.about-container .left-sec .since .experience {
+  display: flex;
+  padding-bottom: 2vw;
+}
+.about-container .left-sec .since .experience .num {
+  width: 8vw;
+  font-size: 3vw;
+  background: #B54F27;
+  background: linear-gradient(to bottom left, #B54F27 0%, #A1CCD1 50%, #176B87 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-family: 'Poppins';
+}
+.about-container .left-sec .since .experience .num:hover {
+  transform: scale(1.08);
+  transition: all 0.4s ease-in;
+}
+.about-container .left-sec .since .experience .content {
+  font-family: 'Montserrat';
+  padding-left: 2vw;
+}
+.about-container .left-sec .since .experience .content h2 {
+  font-size: 2vw;
+  padding-bottom: 1vw;
+}
+.about-container .left-sec .since .experience .content li {
+  font-size: 1.3vw;
+  color: #505050;
+}
+.about-container .right-sec {
+  width: 47%;
+  height: 100%;
+}
+.about-container .right-sec img {
+  height: 100%;
+  width: 100%;
+  border-radius: 3vw;
+}
+.blog-container {
+  width: 95%;
+  height: 100%;
   background-color: #E9E5D9;
+  margin: 0 auto;
+  border-radius: 3.5vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  margin-top: 10vw;
+}
+.blog-container h3 {
+  font-size: 1.3vw;
+  font-weight: 800;
+  color: #EE6C32;
+  font-family: 'Montserrat';
+  text-align: center;
+  padding-bottom: 1vw;
+}
+.blog-container h1 {
+  font-size: 3vw;
+  font-weight: 900;
+  font-family: 'Poppins';
+  color: #053B50;
+  text-align: center;
+}
+.blog-container .blog-cards {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2vw;
+}
+.blog-container .blog-cards .cards {
+  width: 28%;
+  height: 100%;
+  background-color: #fff;
+  padding: 2vw 1.5vw;
+  border-radius: 2vw;
+}
+.blog-container .blog-cards .cards .image {
+  height: 100%;
+}
+.blog-container .blog-cards .cards .image img {
+  border-top-right-radius: 1.5vw;
+  border-top-left-radius: 1.5vw;
+  width: 100%;
+  height: 100%;
+}
+.blog-container .blog-cards .cards .admin {
+  display: flex;
+  list-style-type: none;
+  padding-top: 1vw;
+}
+.blog-container .blog-cards .cards .admin .text {
+  display: flex;
+  padding-right: 4vw;
+  align-items: center;
+}
+.blog-container .blog-cards .cards .admin .text i {
+  font-size: 1.8vw;
+  padding-right: 0.6vw;
+  color: #505050;
+}
+.blog-container .blog-cards .cards .admin .text li {
+  font-family: 'Montserrat';
+  font-size: 1.3vw;
+  color: #505050;
+}
+.blog-container .blog-cards .cards h3 {
+  font-family: 'Poppins';
+  font-weight: 800;
+  color: #505050;
+  font-size: 2vw;
+  text-align: left;
+  padding-top: 1vw;
+}
+.blog-container .blog-cards .cards p {
+  font-size: 1.3vw;
+  color: #505050;
+  font-family: 'Montserrat';
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+.blog-container .blog-cards .cards a {
+  text-decoration: none;
+  font-size: 1.3vw;
+  font-family: 'Montserrat';
+  color: #EE6C32;
+}
+.blog-container .blog-cards .cards a:hover {
+  color: #B54F27;
   transition: all 0.3s ease-in;
 }
 .footer-container {
@@ -281,44 +383,129 @@
     text-shadow: 1.5px 1.5px 5px gray;
     transition: 0.5s;
   }
-  .service-container {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-top: 18vw;
   }
-  .service-container h3 {
+  .about-container .left-sec {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-container .left-sec h3 {
     font-size: 3vw;
     padding-bottom: 1.5vw;
   }
-  .service-container h1 {
+  .about-container .left-sec h1 {
     font-size: 6vw;
     line-height: 6.5vw;
     padding-bottom: 1.5vw;
   }
-  .service-container h4 {
+  .about-container .left-sec h4 li {
     font-size: 2.5vw;
-    padding-bottom: 1.5vw;
+    padding-bottom: 1vw;
   }
-  .service-container .service-cards {
+  .about-container .left-sec .since {
+    width: 100%;
+    padding-top: 4vw;
+  }
+  .about-container .left-sec .since .experience {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 4vw;
+  }
+  .about-container .left-sec .since .experience .num {
+    width: 100%;
+    font-size: 9vw;
+  }
+  .about-container .left-sec .since .experience .content {
+    padding-left: 0;
+  }
+  .about-container .left-sec .since .experience .content h2 {
+    font-size: 6vw;
+    padding-bottom: 2vw;
+  }
+  .about-container .left-sec .since .experience .content li {
+    font-size: 3vw;
+  }
+  .about-container .right-sec {
     width: 100%;
     height: 100%;
-    align-items: center;
+    padding-top: 4vw;
+  }
+  .about-container .right-sec img {
+    height: 100%;
+    width: 100%;
+  }
+  .blog-container {
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    border-radius: 5vw;
+    margin-top: 10vw;
+  }
+  .blog-container h3 {
+    font-size: 3vw;
+    padding-bottom: 1.5vw;
+  }
+  .blog-container h1 {
+    font-size: 6vw;
+    padding-bottom: 1.5vw;
+  }
+  .blog-container .blog-cards {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
-  .service-container .service-cards .s-cards {
-    padding: 6vw;
+  .blog-container .blog-cards .cards {
     width: 90%;
-    margin-bottom: 3vw;
+    margin-top: 4vw;
+    padding: 4vw 3vw;
+    border-radius: 3.5vw;
   }
-  .service-container .service-cards .s-cards i {
-    font-size: 5vw;
-    padding: 2.5vw;
+  .blog-container .blog-cards .cards .image {
+    width: 100%;
+    height: 100%;
   }
-  .service-container .service-cards .s-cards h3 {
-    font-size: 5vw;
-    margin-top: 3vw;
+  .blog-container .blog-cards .cards .image img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 2vw;
+    border-top-left-radius: 2vw;
   }
-  .service-container .service-cards .s-cards li {
+  .blog-container .blog-cards .cards .admin {
+    padding-top: 2vw;
+  }
+  .blog-container .blog-cards .cards .admin .text {
+    padding-right: 12vw;
+  }
+  .blog-container .blog-cards .cards .admin .text i {
+    font-size: 4vw;
+    padding-right: 1vw;
+  }
+  .blog-container .blog-cards .cards .admin .text li {
+    font-size: 3vw;
+  }
+  .blog-container .blog-cards .cards h3 {
+    font-size: 4vw;
+    padding-bottom: 1.5vw;
+    padding-top: 2vw;
+  }
+  .blog-container .blog-cards .cards p {
+    font-size: 3vw;
+    padding-bottom: 2vw;
+  }
+  .blog-container .blog-cards .cards a {
     font-size: 3vw;
   }
   .footer-container {
@@ -416,49 +603,114 @@
     text-shadow: 1.5px 1.5px 5px gray;
     transition: 0.5s;
   }
-  .service-container {
+  .about-container {
     padding-top: 22vw;
   }
-  .service-container h3 {
-    font-size: 3.5vw;
+  .about-container .left-sec {
+    width: 100%;
+    height: 100%;
+  }
+  .about-container .left-sec h3 {
+    font-size: 4vw;
     padding-bottom: 1.5vw;
   }
-  .service-container h1 {
+  .about-container .left-sec h1 {
     font-size: 9vw;
     line-height: 10vw;
     padding-bottom: 2vw;
   }
-  .service-container h4 {
+  .about-container .left-sec h4 li {
     font-size: 4vw;
     padding-bottom: 2vw;
   }
-  .service-container .service-cards {
+  .about-container .left-sec .since {
+    width: 100%;
+    padding-top: 5vw;
+  }
+  .about-container .left-sec .since .experience {
+    padding-bottom: 5vw;
+  }
+  .about-container .left-sec .since .experience .num {
+    width: 100%;
+    font-size: 12vw;
+  }
+  .about-container .left-sec .since .experience .content {
+    padding-left: 0;
+  }
+  .about-container .left-sec .since .experience .content h2 {
+    font-size: 8vw;
+    padding-bottom: 2vw;
+  }
+  .about-container .left-sec .since .experience .content li {
+    font-size: 4vw;
+  }
+  .about-container .right-sec {
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
+    padding-top: 5vw;
   }
-  .service-container .service-cards .s-cards {
-    padding: 9vw;
-    width: 90%;
-    margin-bottom: 4vw;
-    border-radius: 6vw;
+  .about-container .right-sec img {
+    height: 100%;
+    width: 100%;
   }
-  .service-container .service-cards .s-cards i {
-    font-size: 8vw;
-    padding: 2.5vw;
-    border-radius: 7vw;
+  .blog-container {
+    padding-top: 8vw;
+    padding-bottom: 6vw;
+    border-radius: 5vw;
+    margin-top: 10vw;
   }
-  .service-container .service-cards .s-cards h3 {
+  .blog-container h3 {
+    font-size: 4vw;
+    padding-bottom: 1.5vw;
+  }
+  .blog-container h1 {
     font-size: 7vw;
-    line-height: 1;
-    margin-top: 4vw;
+    padding-bottom: 1.5vw;
   }
-  .service-container .service-cards .s-cards li {
+  .blog-container .blog-cards .cards {
+    width: 91%;
+    margin-top: 5vw;
+    padding: 4.5vw 3vw;
+    border-radius: 3.8vw;
+  }
+  .blog-container .blog-cards .cards .image {
+    width: 100%;
+    height: 100%;
+  }
+  .blog-container .blog-cards .cards .image img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 2.2vw;
+    border-top-left-radius: 2.2vw;
+  }
+  .blog-container .blog-cards .cards .admin {
+    padding-top: 2.2vw;
+  }
+  .blog-container .blog-cards .cards .admin .text {
+    padding-right: 14vw;
+  }
+  .blog-container .blog-cards .cards .admin .text i {
+    font-size: 5vw;
+    padding-right: 1vw;
+  }
+  .blog-container .blog-cards .cards .admin .text li {
+    font-size: 4vw;
+  }
+  .blog-container .blog-cards .cards h3 {
+    font-size: 5vw;
+    padding-bottom: 1.8vw;
+    padding-top: 3vw;
+  }
+  .blog-container .blog-cards .cards p {
+    font-size: 4vw;
+    padding-bottom: 3vw;
+  }
+  .blog-container .blog-cards .cards a {
     font-size: 4vw;
   }
   .footer-container {
     padding: 6vw;
+    margin-top: 8vw;
   }
   .footer-container .socials {
     width: 100%;
