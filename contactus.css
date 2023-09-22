@@ -141,7 +141,7 @@
   padding: 1vw;
   border-radius: 2vw;
   outline: none;
-  border: 1px solid #3B4D57;
+  border: 2px solid #3B4D57;
   font-size: 1.5vw;
   font-weight: 400;
   color: #505050;
@@ -174,7 +174,7 @@
   padding: 1vw;
   border-radius: 2vw;
   outline: none;
-  border: 1px solid #3B4D57;
+  border: 2px solid #3B4D57;
   font-size: 1.5vw;
   font-weight: 400;
   color: #505050;
@@ -202,7 +202,7 @@
   padding: 1vw;
   border-radius: 2vw;
   outline: none;
-  border: 1px solid #3B4D57;
+  border: 2px solid #3B4D57;
   font-size: 1.5vw;
   font-weight: 400;
   color: #505050;
@@ -218,6 +218,25 @@
   font-size: 1vw;
   font-weight: 600;
   color: #505050;
+}
+.contact-container .right-sec .inputs .sbmt-btn {
+  text-align: center;
+  margin-top: 2vw;
+}
+.contact-container .right-sec .inputs .sbmt-btn button {
+  padding: 1.3vw 2.6vw;
+  color: #3B4D57;
+  background: transparent;
+  border-radius: 4vw;
+  font-size: 1.3vw;
+  font-weight: 600;
+  font-family: 'Montserrat';
+  border: none;
+  border: 2px solid #3B4D57;
+}
+.contact-container .right-sec .inputs .sbmt-btn button:hover {
+  box-shadow: 0 0 0.5vw gray inset;
+  transition: all 0.5 ease-in-out;
 }
 .footer-container {
   display: flex;
@@ -440,6 +459,12 @@
     padding-left: 2vw;
     padding-right: 2vw;
   }
+  .contact-container .right-sec .inputs .sbmt-btn button {
+    padding: 2.5vw 4.5vw;
+    font-size: 3.5vw;
+    margin-top: 6vw;
+    border-radius: 5vw;
+  }
   .footer-container {
     display: flex;
     flex-direction: column;
@@ -508,5 +533,174 @@
   }
   .footer-container .office .address li {
     font-size: 3vw;
+  }
+}
+@media (max-width: 420px) {
+  .nav-container .nav-bar {
+    align-items: center;
+    position: fixed;
+    height: 18vw;
+  }
+  .nav-container .nav-bar .logo .ri-lock-unlock-fill {
+    font-size: 8vw;
+  }
+  .nav-container .nav-bar .logo h2 {
+    font-size: 9vw;
+    font-weight: 900;
+  }
+  .nav-container .nav-bar .nav-contents {
+    display: none;
+  }
+  .nav-container .nav-bar .ri-menu-3-fill {
+    display: block;
+    font-size: 9vw;
+    font-weight: 900;
+    color: #A1CCD1;
+  }
+  .nav-container .nav-bar .ri-menu-3-fill:hover {
+    text-shadow: 1.5px 1.5px 5px gray;
+    transition: 0.5s;
+  }
+  .contact-container {
+    padding-top: 24vw;
+  }
+  .contact-container .left-sec {
+    width: 100%;
+    height: 100%;
+  }
+  .contact-container .right-sec {
+    width: 100%;
+    height: 100%;
+    margin-top: 10vw;
+    padding-top: 4vw;
+    padding-bottom: 6vw;
+  }
+  .contact-container .right-sec h3 {
+    font-size: 3.5vw;
+    padding-bottom: 4vw;
+  }
+  .contact-container .right-sec h1 {
+    font-size: 8vw;
+    padding-bottom: 4vw;
+  }
+  .contact-container .right-sec h4 li {
+    font-size: 2.5vw;
+  }
+  .contact-container .right-sec .inputs {
+    margin-top: 10vw;
+  }
+  .contact-container .right-sec .inputs .part-one {
+    margin-bottom: 7vw;
+    gap: 7vw;
+  }
+  .contact-container .right-sec .inputs .part-one .in-bar {
+    width: 100%;
+  }
+  .contact-container .right-sec .inputs .part-one .in-bar input {
+    width: 100%;
+    padding: 4vw;
+    border-radius: 6.5vw;
+    font-size: 4.5vw;
+  }
+  .contact-container .right-sec .inputs .part-one .in-bar label {
+    font-size: 3.5vw;
+    left: 5.5vw;
+    top: -2vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+  .contact-container .right-sec .inputs .part-two {
+    margin-bottom: 7vw;
+  }
+  .contact-container .right-sec .inputs .part-two .in-bar input {
+    width: 100%;
+    padding: 4vw;
+    border-radius: 6.5vw;
+    font-size: 4.5vw;
+  }
+  .contact-container .right-sec .inputs .part-two .in-bar label {
+    font-size: 3.5vw;
+    left: 5.5vw;
+    top: -2vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+  .contact-container .right-sec .inputs .part-three .in-bar textarea {
+    width: 100%;
+    padding: 4vw;
+    border-radius: 6.5vw;
+    font-size: 4.5vw;
+  }
+  .contact-container .right-sec .inputs .part-three .in-bar label {
+    font-size: 3.5vw;
+    left: 5.5vw;
+    top: -2vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+  .contact-container .right-sec .inputs .sbmt-btn button {
+    padding: 3vw 5vw;
+    font-size: 4vw;
+    margin-top: 4vw;
+    border-radius: 5.5vw;
+  }
+  .footer-container {
+    padding: 6vw;
+  }
+  .footer-container .socials {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-container .socials .logo {
+    padding-bottom: 3.5vw;
+  }
+  .footer-container .socials .logo i {
+    font-size: 9vw;
+  }
+  .footer-container .socials .logo h2 {
+    font-size: 9vw;
+  }
+  .footer-container .socials .text {
+    padding-bottom: 3.5vw;
+  }
+  .footer-container .socials .text li {
+    font-size: 4.5vw;
+  }
+  .footer-container .socials .social-icons i {
+    font-size: 6.5vw;
+    padding: 3vw;
+    border-radius: 7.5vw;
+  }
+  .footer-container .links {
+    height: 100%;
+    width: 100%;
+    margin-top: 9vw;
+  }
+  .footer-container .links h2 {
+    font-size: 6.5vw;
+  }
+  .footer-container .links .navigations {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 4vw;
+  }
+  .footer-container .links .navigations li {
+    font-size: 4vw;
+    line-height: 3;
+  }
+  .footer-container .office {
+    margin-top: 9vw;
+    width: 100%;
+    height: 100%;
+  }
+  .footer-container .office h2 {
+    font-size: 6.5vw;
+  }
+  .footer-container .office .address i {
+    font-size: 7vw;
+    padding-right: 2.4vw;
+  }
+  .footer-container .office .address li {
+    font-size: 4vw;
   }
 }

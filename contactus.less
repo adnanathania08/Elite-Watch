@@ -204,7 +204,7 @@
                         padding: 1vw;
                         border-radius: 2vw;
                         outline: none;
-                        border: 1px solid #3B4D57;
+                        border: 2px solid @blu-grn;
                         font-size: 1.5vw;
                         font-weight: 400;
                         color: @dark-gray;
@@ -244,7 +244,7 @@
                         padding: 1vw;
                         border-radius: 2vw;
                         outline: none;
-                        border: 1px solid #3B4D57;
+                        border: 2px solid @blu-grn;
                         font-size: 1.5vw;
                         font-weight: 400;
                         color: @dark-gray;
@@ -282,7 +282,7 @@
                         padding: 1vw;
                         border-radius: 2vw;
                         outline: none;
-                        border: 1px solid #3B4D57;
+                        border: 2px solid @blu-grn;
                         font-size: 1.5vw;
                         font-weight: 400;
                         color: @dark-gray;
@@ -303,6 +303,29 @@
 
 
                     }
+                }
+            }
+
+            .sbmt-btn {
+                text-align: center;
+                margin-top: 2vw;
+
+                button {
+                    padding: 1.3vw 2.6vw;
+                    color: @blu-grn;
+                    background: transparent;
+                    border-radius: 4vw;
+                    font-size: 1.3vw;
+                    font-weight: 600;
+                    font-family: @monst;
+                    border: none;
+                    border: 2px solid @blu-grn;
+
+                    &:hover {
+                        box-shadow: 0 0 0.5vw gray inset;
+                        transition: all 0.5 ease-in-out;
+                    }
+
                 }
             }
         }
@@ -499,6 +522,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+
         .left-sec {
             width: 100%;
             height: 100%;
@@ -508,24 +532,28 @@
             width: 100%;
             height: 100%;
             margin-top: 8vw;
+
             h3 {
                 font-size: 3vw;
                 padding-bottom: 3vw;
             }
+
             h1 {
                 font-size: 6vw;
                 padding-bottom: 3vw;
             }
+
             h4 {
                 li {
                     font-size: 2.5vw;
-    
+
                 }
             }
 
 
             .inputs {
                 margin-top: 8vw;
+
                 .part-one {
                     display: flex;
                     flex-direction: column;
@@ -534,6 +562,7 @@
                     text-align: center;
                     margin-bottom: 5vw;
                     gap: 5vw;
+
                     .in-bar {
                         width: 100%;
 
@@ -549,7 +578,7 @@
                             top: -1.7vw;
                             padding-left: 2vw;
                             padding-right: 2vw;
-    
+
                         }
 
                     }
@@ -573,7 +602,7 @@
                             top: -1.7vw;
                             padding-left: 2vw;
                             padding-right: 2vw;
-  
+
                         }
 
                     }
@@ -588,6 +617,7 @@
                             border-radius: 5.5vw;
 
                         }
+
                         label {
                             font-size: 2.5vw;
                             left: 4.5vw;
@@ -597,7 +627,17 @@
 
                         }
                     }
-                    
+
+                }
+
+                .sbmt-btn {
+                    button {
+                        padding: 2.5vw 4.5vw;
+                        font-size: 3.5vw;
+                        margin-top: 6vw;
+                        border-radius: 5vw;
+
+                    }
                 }
             }
 
@@ -612,6 +652,7 @@
         flex-direction: column;
         padding: 6vw;
         margin-top: 8vw;
+
         .socials {
             width: 100%;
             height: 100%;
@@ -696,6 +737,253 @@
             }
         }
     }
+
+
+}
+
+//-------------------MEDIA QUERIES FOR 420PX---------------
+@media (max-width:420px) {
+
+
+    //---------------NAV-CONTAINER 420PX-------------------
+    .nav-container {
+
+        .nav-bar {
+            align-items: center;
+            position: fixed;
+            height: 18vw;
+
+            .logo {
+                .ri-lock-unlock-fill {
+                    font-size: 8vw;
+                }
+
+                h2 {
+                    font-size: 9vw;
+                    font-weight: 900;
+                }
+            }
+
+            .nav-contents {
+                display: none;
+            }
+
+            .ri-menu-3-fill {
+                display: block;
+                font-size: 9vw;
+                font-weight: 900;
+                color: @sky-blu;
+
+                &:hover {
+                    text-shadow: 1.5px 1.5px 5px gray;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+    }
+
+    //----------------CONTACT-CONTAINER 420PX----------
+    .contact-container {
+        padding-top: 24vw;
+        
+
+        .left-sec {
+            width: 100%;
+            height: 100%;
+        }
+
+        .right-sec {
+            width: 100%;
+            height: 100%;
+            margin-top: 10vw;
+            padding-top: 4vw;
+            padding-bottom: 6vw;
+
+
+            h3 {
+                font-size: 3.5vw;
+                padding-bottom: 4vw;
+            }
+
+            h1 {
+                font-size: 8vw;
+                padding-bottom: 4vw;
+            }
+
+            h4 {
+                li {
+                    font-size: 2.5vw;
+
+                }
+            }
+
+
+            .inputs {
+                margin-top: 10vw;
+
+                .part-one {
+                    margin-bottom: 7vw;
+                    gap: 7vw;
+
+                    .in-bar {
+                        width: 100%;
+
+                        input {
+                            width: 100%;
+                            padding: 4vw;
+                            border-radius: 6.5vw;
+                            font-size: 4.5vw;
+                        }
+
+                        label {
+                            font-size: 3.5vw;
+                            left: 5.5vw;
+                            top: -2vw;
+                            padding-left: 2.5vw;
+                            padding-right: 2.5vw;
+    
+                        }
+
+                    }
+                }
+
+                .part-two {
+                    margin-bottom: 7vw;
+
+                    .in-bar {
+
+                        input {
+                            width: 100%;
+                            padding: 4vw;
+                            border-radius: 6.5vw;
+                            font-size: 4.5vw;
+
+                        }
+
+                        label {
+                            font-size: 3.5vw;
+                            left: 5.5vw;
+                            top: -2vw;
+                            padding-left: 2.5vw;
+                            padding-right: 2.5vw;
+
+                        }
+
+                    }
+                }
+
+                .part-three {
+
+                    .in-bar {
+                        textarea {
+                            width: 100%;
+                            padding: 4vw;
+                            border-radius: 6.5vw;
+                            font-size: 4.5vw;
+
+                        }
+
+                        label {
+                            font-size: 3.5vw;
+                            left: 5.5vw;
+                            top: -2vw;
+                            padding-left: 2.5vw;
+                            padding-right: 2.5vw;
+
+                        }
+                    }
+
+                }
+
+                .sbmt-btn {
+                    button {
+                        padding: 3vw 5vw;
+                        font-size: 4vw;
+                        margin-top: 4vw;
+                        border-radius: 5.5vw;
+    
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+    //---------FOOTER CONTAINER FOR 420PX-----------------------
+    .footer-container {
+        padding: 6vw;
+        .socials {
+            width: 100%;
+            height: 100%;
+            .logo {
+                padding-bottom: 3.5vw;
+                i {
+                    font-size: 9vw;
+                }
+                h2 {
+                    font-size: 9vw;
+                }
+            }
+            .text {
+                padding-bottom: 3.5vw;
+                li {
+                    font-size: 4.5vw;
+                }
+            }
+            .social-icons {
+                i {
+                    font-size: 6.5vw;
+                    padding: 3vw;
+                    border-radius: 7.5vw;
+                }
+            }
+        }
+
+        .links {
+            height: 100%;
+            width: 100%;
+            margin-top: 9vw;
+            h2 {
+                font-size: 6.5vw;
+            }
+            .navigations {
+                width: 65%;
+                margin: 0 auto;
+                padding-top: 4vw;
+                li {
+                    font-size: 4vw;
+                    line-height: 3;
+                }
+            }
+
+        }
+
+        .office {
+            margin-top: 9vw;
+            width: 100%;
+            height: 100%;
+
+            h2 {
+                font-size: 6.5vw;
+            }
+            .address {
+
+                i {
+                    font-size: 7vw;
+                    padding-right: 2.4vw;
+                }
+                li {
+                    font-size: 4vw;
+                }
+            }
+        }   
+    }
+
+
+
 
 
 }
