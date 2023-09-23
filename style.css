@@ -841,7 +841,7 @@
   .main-container .hero-container .left button {
     margin-top: 10vw;
     font-size: 4.5vw;
-    padding: 5vw 7vw;
+    padding: 4.5vw 6.6vw;
     border-radius: 8vw;
   }
   .main-container .hero-container .right {
@@ -857,12 +857,13 @@
   .main-container .third-container {
     flex-direction: column;
     align-items: center;
+    padding-top: 8vw;
   }
   .main-container .third-container .three-cards {
     height: 80vw;
     width: 80vw;
-    padding: 4vw;
-    margin-bottom: 2vw;
+    padding: 3.5vw;
+    margin-bottom: 2.5vw;
     border-radius: 5vw;
   }
   .main-container .third-container .three-cards .in-content .up-cntnt {
@@ -892,8 +893,8 @@
     height: 100%;
   }
   .main-container .fourth-container .left-image img {
-    width: 85%;
-    height: 85%;
+    width: 90%;
+    height: 100%;
   }
   .main-container .fourth-container .right-text {
     height: 100%;
@@ -988,6 +989,7 @@
   }
   .main-container .sixth-container {
     padding: 6vw;
+    margin-top: 8vw;
   }
   .main-container .sixth-container .socials {
     width: 100%;

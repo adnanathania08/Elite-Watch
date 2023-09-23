@@ -632,11 +632,11 @@
     position: fixed;
     height: 18vw;
   }
-  .nav-container .nav-bar .logo .ri-lock-unlock-fill {
-    font-size: 8vw;
-  }
   .nav-container .nav-bar .logo h2 {
     font-size: 9vw;
+  }
+  .nav-container .nav-bar .logo h2 span {
+    font-size: 6vw;
     font-weight: 900;
   }
   .nav-container .nav-bar .nav-contents {
@@ -683,12 +683,12 @@
   }
   .about-container .left-sec h3 {
     font-size: 4vw;
-    padding-bottom: 1.5vw;
+    padding-bottom: 3vw;
   }
   .about-container .left-sec h1 {
     font-size: 9vw;
-    line-height: 10vw;
-    padding-bottom: 2vw;
+    line-height: 12vw;
+    padding-bottom: 3vw;
   }
   .about-container .left-sec h4 li {
     font-size: 4vw;
@@ -696,10 +696,10 @@
   }
   .about-container .left-sec .since {
     width: 100%;
-    padding-top: 5vw;
+    padding-top: 8vw;
   }
   .about-container .left-sec .since .experience {
-    padding-bottom: 5vw;
+    padding-bottom: 8vw;
   }
   .about-container .left-sec .since .experience .num {
     width: 100%;
@@ -718,7 +718,7 @@
   .about-container .right-sec {
     width: 100%;
     height: 100%;
-    padding-top: 5vw;
+    padding-top: 8vw;
   }
   .about-container .right-sec img {
     height: 100%;
@@ -732,15 +732,15 @@
   }
   .blog-container h3 {
     font-size: 4vw;
-    padding-bottom: 1.5vw;
+    padding-bottom: 3vw;
   }
   .blog-container h1 {
-    font-size: 7vw;
+    font-size: 6.5vw;
     padding-bottom: 1.5vw;
   }
   .blog-container .blog-cards .cards {
     width: 91%;
-    margin-top: 5vw;
+    margin-top: 8vw;
     padding: 4.5vw 3vw;
     border-radius: 3.8vw;
   }

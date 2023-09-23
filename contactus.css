@@ -647,15 +647,15 @@
     padding-bottom: 6vw;
   }
   .contact-container .right-sec h3 {
-    font-size: 3.5vw;
+    font-size: 4vw;
     padding-bottom: 4vw;
   }
   .contact-container .right-sec h1 {
     font-size: 8vw;
-    padding-bottom: 4vw;
+    padding-bottom: 6vw;
   }
   .contact-container .right-sec h4 li {
-    font-size: 2.5vw;
+    font-size: 2.8vw;
   }
   .contact-container .right-sec .inputs {
     margin-top: 10vw;
@@ -710,13 +710,14 @@
     padding-right: 2.5vw;
   }
   .contact-container .right-sec .inputs .sbmt-btn button {
-    padding: 3vw 5vw;
+    padding: 3vw 5.5vw;
     font-size: 4vw;
     margin-top: 4vw;
     border-radius: 5.5vw;
   }
   .footer-container {
     padding: 6vw;
+    margin-top: 8vw;
   }
   .footer-container .socials {
     width: 100%;
