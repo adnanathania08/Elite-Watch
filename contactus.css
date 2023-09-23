@@ -27,18 +27,16 @@
   align-items: center;
   gap: 0.5vw;
 }
-.nav-container .nav-bar .logo .ri-lock-unlock-fill {
-  font-size: 2.5vw;
+.nav-container .nav-bar .logo h2 {
+  font-size: 3.5vw;
+  font-weight: 900;
+  font-family: 'Lobster';
   color: #053B50;
 }
-.nav-container .nav-bar .logo .ri-lock-unlock-fill:hover {
-  text-shadow: 1.5px 1.5px 5px gray;
-  transition: all 0.5s ease-in-out;
-}
-.nav-container .nav-bar .logo h2 {
-  font-size: 3vw;
+.nav-container .nav-bar .logo h2 span {
   font-family: 'Lobster';
-  font-weight: 800;
+  font-size: 2vw;
+  font-weight: 600;
   color: #053B50;
 }
 .nav-container .nav-bar .logo h2:hover {
@@ -380,11 +378,11 @@
     position: fixed;
     height: 14vw;
   }
-  .nav-container .nav-bar .logo .ri-lock-unlock-fill {
-    font-size: 5vw;
-  }
   .nav-container .nav-bar .logo h2 {
     font-size: 7vw;
+  }
+  .nav-container .nav-bar .logo h2 span {
+    font-size: 4.5vw;
     font-weight: 900;
   }
   .nav-container .nav-bar .nav-contents {
@@ -592,11 +590,11 @@
     position: fixed;
     height: 18vw;
   }
-  .nav-container .nav-bar .logo .ri-lock-unlock-fill {
-    font-size: 8vw;
-  }
   .nav-container .nav-bar .logo h2 {
     font-size: 9vw;
+  }
+  .nav-container .nav-bar .logo h2 span {
+    font-size: 6vw;
     font-weight: 900;
   }
   .nav-container .nav-bar .nav-contents {
