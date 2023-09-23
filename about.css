@@ -77,6 +77,9 @@
 .nav-container .nav-bar .ri-menu-3-fill {
   display: none;
 }
+.nav-container .drop-down {
+  display: none;
+}
 .about-container {
   width: 95%;
   height: 100%;
@@ -383,6 +386,28 @@
     text-shadow: 1.5px 1.5px 5px gray;
     transition: 0.5s;
   }
+  .nav-container .drop-down {
+    display: none;
+    width: 95%;
+    z-index: 100;
+    padding-top: 16vw;
+    background-color: #A1CCD1;
+    position: fixed;
+    text-align: center;
+    padding-bottom: 4vw;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+  }
+  .nav-container .drop-down h3 {
+    padding-top: 6vw;
+  }
+  .nav-container .drop-down h3 a {
+    text-decoration: none;
+    font-size: 4vw;
+    color: #505050;
+    font-family: 'Montserrat';
+    font-weight: 600;
+  }
   .about-container {
     display: flex;
     flex-direction: column;
@@ -602,6 +627,28 @@
   .nav-container .nav-bar .ri-menu-3-fill:hover {
     text-shadow: 1.5px 1.5px 5px gray;
     transition: 0.5s;
+  }
+  .nav-container .drop-down {
+    display: none;
+    width: 95%;
+    background-color: #A1CCD1;
+    padding-top: 18vw;
+    position: fixed;
+    text-align: center;
+    z-index: 100;
+    padding-bottom: 4vw;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+  }
+  .nav-container .drop-down h3 {
+    padding-top: 6vw;
+  }
+  .nav-container .drop-down h3 a {
+    text-decoration: none;
+    font-size: 4vw;
+    color: #505050;
+    font-family: 'Montserrat';
+    font-weight: 600;
   }
   .about-container {
     padding-top: 22vw;
