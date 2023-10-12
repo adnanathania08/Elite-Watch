@@ -39,9 +39,9 @@
   font-weight: 600;
   color: #053B50;
 }
-.nav-container .nav-bar .logo h2:hover {
-  text-shadow: 1.5px 1.5px 5px gray;
-  transition: all 0.5s ease-in-out;
+.nav-container .nav-bar .logo h2 .dot {
+  font-size: 2.5vw;
+  color: #EE6C32;
 }
 .nav-container .nav-bar .nav-contents {
   display: flex;
@@ -64,12 +64,12 @@
   font-size: 1.3vw;
   font-weight: 700;
   border: none;
-  background-color: #A1CCD1;
+  background-color: #EE6C32;
   color: #fff;
   border-radius: 25px;
 }
 .nav-container .nav-bar .nav-contents button:hover {
-  background-color: #053B50;
+  background-color: #B54F27;
   transition: all 0.3s ease-in-out;
 }
 .nav-container .nav-bar .ri-menu-3-fill {
@@ -119,10 +119,11 @@
 }
 .about-container .left-sec .since .experience {
   display: flex;
-  padding-bottom: 2vw;
+  padding-bottom: 3vw;
+  width: 100%;
 }
 .about-container .left-sec .since .experience .num {
-  width: 8vw;
+  width: 25%;
   font-size: 3vw;
   background: #B54F27;
   background: linear-gradient(to bottom left, #B54F27 0%, #A1CCD1 50%, #176B87 100%);
@@ -137,7 +138,7 @@
 }
 .about-container .left-sec .since .experience .content {
   font-family: 'Montserrat';
-  padding-left: 2vw;
+  width: 75%;
 }
 .about-container .left-sec .since .experience .content h2 {
   font-size: 2vw;
@@ -154,32 +155,18 @@
 .about-container .right-sec img {
   height: 100%;
   width: 100%;
-  border-radius: 3vw;
+  border-radius: 2vw;
+  box-shadow: 0 0 3vw 5px lightgrey;
 }
 .blog-container {
   width: 95%;
   height: 100%;
   background-color: #E9E5D9;
   margin: 0 auto;
-  border-radius: 3.5vw;
-  padding-top: 4vw;
-  padding-bottom: 4vw;
-  margin-top: 10vw;
-}
-.blog-container h3 {
-  font-size: 1.3vw;
-  font-weight: 800;
-  color: #EE6C32;
-  font-family: 'Montserrat';
-  text-align: center;
-  padding-bottom: 1vw;
-}
-.blog-container h1 {
-  font-size: 3vw;
-  font-weight: 900;
-  font-family: 'Poppins';
-  color: #053B50;
-  text-align: center;
+  border-radius: 2vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  margin-top: 6vw;
 }
 .blog-container .blog-cards {
   display: flex;
@@ -190,11 +177,11 @@
   width: 28%;
   height: 100%;
   background-color: #fff;
-  padding: 2vw 1.5vw;
+  padding: 1.5vw 1.5vw;
   border-radius: 2vw;
 }
 .blog-container .blog-cards .cards .image {
-  height: 100%;
+  height: 15vw;
 }
 .blog-container .blog-cards .cards .image img {
   border-top-right-radius: 1.5vw;
@@ -202,39 +189,18 @@
   width: 100%;
   height: 100%;
 }
-.blog-container .blog-cards .cards .admin {
-  display: flex;
-  list-style-type: none;
-  padding-top: 1vw;
-}
-.blog-container .blog-cards .cards .admin .text {
-  display: flex;
-  padding-right: 4vw;
-  align-items: center;
-}
-.blog-container .blog-cards .cards .admin .text i {
-  font-size: 1.8vw;
-  padding-right: 0.6vw;
-  color: #505050;
-}
-.blog-container .blog-cards .cards .admin .text li {
-  font-family: 'Montserrat';
-  font-size: 1.3vw;
-  color: #505050;
-}
 .blog-container .blog-cards .cards h3 {
   font-family: 'Poppins';
   font-weight: 800;
   color: #505050;
   font-size: 2vw;
   text-align: left;
-  padding-top: 1vw;
+  padding: 1vw 0;
 }
 .blog-container .blog-cards .cards p {
   font-size: 1.3vw;
   color: #505050;
   font-family: 'Montserrat';
-  padding-top: 1vw;
   padding-bottom: 1vw;
 }
 .blog-container .blog-cards .cards a {
@@ -366,21 +332,20 @@
   display: flex;
   line-height: 2;
   font-family: 'Montserrat';
-  align-items: center;
-}
-.footer-container .office .address i {
-  font-size: 2vw;
-  padding-right: 1vw;
-}
-.footer-container .office .address i:hover {
-  color: #EE6C32;
-  transition: all 0.5s ease-in-out;
+  padding-bottom: 1.5vw;
 }
 .footer-container .office .address li {
   font-size: 1.5vw;
   font-weight: 700;
 }
-@media (max-width: 600px) {
+.footer-container .office .address li a {
+  text-decoration: none;
+  color: #000;
+}
+.footer-container .office .address li a:hover {
+  color: blue;
+}
+@media (max-width: 770px) {
   .nav-container .nav-bar {
     align-items: center;
     position: fixed;
@@ -393,6 +358,13 @@
     font-size: 7vw;
     font-weight: 900;
   }
+  .nav-container .nav-bar .logo h2 span {
+    font-size: 4.5vw;
+    font-weight: 900;
+  }
+  .nav-container .nav-bar .logo h2 .dot {
+    font-size: 4vw;
+  }
   .nav-container .nav-bar .nav-contents {
     display: none;
   }
@@ -400,11 +372,7 @@
     display: block;
     font-size: 7vw;
     font-weight: 900;
-    color: #A1CCD1;
-  }
-  .nav-container .nav-bar .ri-menu-3-fill:hover {
-    text-shadow: 1.5px 1.5px 5px gray;
-    transition: 0.5s;
+    color: #EE6C32;
   }
   .nav-container .drop-down {
     display: none;
@@ -618,12 +586,12 @@
   .footer-container .office h2 {
     font-size: 5.5vw;
   }
-  .footer-container .office .address i {
-    font-size: 6vw;
-    padding-right: 2vw;
+  .footer-container .office .address {
+    padding-bottom: 2vw;
   }
   .footer-container .office .address li {
     font-size: 3vw;
+    text-align: center;
   }
 }
 @media (max-width: 420px) {
@@ -639,6 +607,9 @@
     font-size: 6vw;
     font-weight: 900;
   }
+  .nav-container .nav-bar .logo h2 .dot {
+    font-size: 4vw;
+  }
   .nav-container .nav-bar .nav-contents {
     display: none;
   }
@@ -646,32 +617,18 @@
     display: block;
     font-size: 9vw;
     font-weight: 900;
-    color: #A1CCD1;
-  }
-  .nav-container .nav-bar .ri-menu-3-fill:hover {
-    text-shadow: 1.5px 1.5px 5px gray;
-    transition: 0.5s;
   }
   .nav-container .drop-down {
-    display: none;
     width: 95%;
-    background-color: #A1CCD1;
-    padding-top: 18vw;
-    position: fixed;
-    text-align: center;
-    z-index: 100;
-    padding-bottom: 4vw;
+    padding: 18vw 0;
     border-bottom-left-radius: 2vw;
     border-bottom-right-radius: 2vw;
   }
   .nav-container .drop-down h3 {
-    padding-top: 6vw;
+    padding-top: 10vw;
   }
   .nav-container .drop-down h3 a {
-    text-decoration: none;
-    font-size: 4vw;
-    color: #505050;
-    font-family: 'Montserrat';
+    font-size: 6vw;
     font-weight: 600;
   }
   .about-container {
@@ -829,16 +786,16 @@
     line-height: 3;
   }
   .footer-container .office {
-    margin-top: 9vw;
+    margin-top: 10vw;
     width: 100%;
     height: 100%;
   }
   .footer-container .office h2 {
     font-size: 6.5vw;
+    padding-bottom: 3vw;
   }
-  .footer-container .office .address i {
-    font-size: 7vw;
-    padding-right: 2.4vw;
+  .footer-container .office .address {
+    padding-bottom: 4vw;
   }
   .footer-container .office .address li {
     font-size: 4vw;

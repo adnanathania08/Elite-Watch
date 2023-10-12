@@ -53,35 +53,25 @@
             align-items: center;
             gap: 0.5vw;
 
-            // .ri-lock-unlock-fill {
-            //     font-size: 2.5vw;
-            //     color: @drk-blu;
-
-                // &:hover {
-                //     text-shadow: 1.5px 1.5px 5px gray;
-                //     transition: all 0.5s ease-in-out;
-                // }
-
-            // }
-
             h2 {
                 font-size: 3.5vw;
                 font-weight: 900;
                 font-family: @lobst;
                 color: @drk-blu;
+
                 span {
                     font-family: @lobst;
                     font-size: 2vw;
                     font-weight: 600;
                     color: @drk-blu;
-    
+
                 }
 
-                &:hover {
-                    text-shadow: 1.5px 1.5px 5px gray;
-                    transition: all 0.5s ease-in-out;
-                }
 
+                .dot {
+                    font-size: 2.5vw;
+                    color: @orange;
+                }
             }
         }
 
@@ -111,12 +101,12 @@
                 font-size: 1.3vw;
                 font-weight: 700;
                 border: none;
-                background-color: @sky-blu;
+                background-color: @orange;
                 color: @wht;
                 border-radius: 25px;
 
                 &:hover {
-                    background-color: @drk-blu;
+                    background-color: @drk-orange;
                     transition: all 0.3s ease-in-out;
                 }
 
@@ -186,10 +176,11 @@
 
             .experience {
                 display: flex;
-                padding-bottom: 2vw;
+                padding-bottom: 3vw;
+                width: 100%;
 
                 .num {
-                    width: 8vw;
+                    width: 25%;
                     font-size: 3vw;
                     background: #B54F27;
                     background: linear-gradient(to bottom left, #B54F27 0%, #A1CCD1 50%, #176B87 100%);
@@ -207,7 +198,8 @@
 
                 .content {
                     font-family: @monst;
-                    padding-left: 2vw;
+                    // padding-left: 2vw;
+                    width: 75%;
 
                     h2 {
                         font-size: 2vw;
@@ -230,11 +222,8 @@
         img {
             height: 100%;
             width: 100%;
-            border-radius: 3vw;
-            // &:hover {
-            //     transform: scale(1.02);
-            //     transition: all 0.4s ease-in;
-            // }
+            border-radius: 2vw;
+            box-shadow: 0 0 3vw 5px lightgrey;
         }
     }
 }
@@ -246,27 +235,19 @@
     height: 100%;
     background-color: @lgt-beige;
     margin: 0 auto;
-    border-radius: 3.5vw;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
-    margin-top: 10vw;
+    border-radius: 2vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    margin-top: 6vw;
 
-    h3 {
-        font-size: 1.3vw;
-        font-weight: 800;
-        color: @orange;
-        font-family: @monst;
-        text-align: center;
-        padding-bottom: 1vw;
-    }
 
-    h1 {
-        font-size: 3vw;
-        font-weight: 900;
-        font-family: @popins;
-        color: @drk-blu;
-        text-align: center;
-    }
+    // h1 {
+    //     font-size: 3vw;
+    //     font-weight: 900;
+    //     font-family: @popins;
+    //     color: @drk-blu;
+    //     text-align: center;
+    // }
 
     .blog-cards {
         display: flex;
@@ -277,11 +258,11 @@
             width: 28%;
             height: 100%;
             background-color: @wht;
-            padding: 2vw 1.5vw;
+            padding: 1.5vw 1.5vw;
             border-radius: 2vw;
 
             .image {
-                height: 100%;
+                height: 15vw;
 
                 img {
                     border-top-right-radius: 1.5vw;
@@ -291,29 +272,29 @@
                 }
             }
 
-            .admin {
-                display: flex;
-                list-style-type: none;
-                padding-top: 1vw;
+            // .admin {
+            //     display: flex;
+            //     list-style-type: none;
+            //     padding-top: 1vw;
 
-                .text {
-                    display: flex;
-                    padding-right: 4vw;
-                    align-items: center;
+            //     .text {
+            //         display: flex;
+            //         padding-right: 4vw;
+            //         align-items: center;
 
-                    i {
-                        font-size: 1.8vw;
-                        padding-right: 0.6vw;
-                        color: @dark-gray;
-                    }
+            //         i {
+            //             font-size: 1.8vw;
+            //             padding-right: 0.6vw;
+            //             color: @dark-gray;
+            //         }
 
-                    li {
-                        font-family: @monst;
-                        font-size: 1.3vw;
-                        color: @dark-gray;
-                    }
-                }
-            }
+            //         li {
+            //             font-family: @monst;
+            //             font-size: 1.3vw;
+            //             color: @dark-gray;
+            //         }
+            //     }
+            // }
 
             h3 {
                 font-family: @popins;
@@ -321,14 +302,13 @@
                 color: @dark-gray;
                 font-size: 2vw;
                 text-align: left;
-                padding-top: 1vw;
+                padding: 1vw 0;
             }
 
             p {
                 font-size: 1.3vw;
                 color: @dark-gray;
                 font-family: @monst;
-                padding-top: 1vw;
                 padding-bottom: 1vw;
             }
 
@@ -476,6 +456,7 @@
                 }
 
             }
+
         }
     }
 
@@ -494,33 +475,32 @@
             display: flex;
             line-height: 2;
             font-family: @monst;
-            align-items: center;
+            padding-bottom: 1.5vw;
 
-            i {
-                font-size: 2vw;
-                padding-right: 1vw;
-
-                &:hover {
-                    color: @orange;
-                    transition: all 0.5s ease-in-out;
-                }
-
-            }
 
             li {
                 font-size: 1.5vw;
                 font-weight: 700;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+
+                    &:hover {
+                        color: blue;
+                    }
+                }
             }
         }
     }
 
 }
 
-//-----------------------MEDIA QUERIES FOR 600PX-----------------
+//-----------------------MEDIA QUERIES FOR 770PX-----------------
 
-@media (max-width:600px) {
+@media (max-width:770px) {
 
-    //---------------------NAV CONTAINER 600PX------------------
+    //---------------------NAV CONTAINER 770PX------------------
     .nav-container {
 
         .nav-bar {
@@ -536,6 +516,17 @@
                 h2 {
                     font-size: 7vw;
                     font-weight: 900;
+
+                    span {
+                        font-size: 4.5vw;
+                        font-weight: 900;
+
+                    }
+
+                    .dot {
+                        font-size: 4vw;
+                    }
+
                 }
             }
 
@@ -547,12 +538,8 @@
                 display: block;
                 font-size: 7vw;
                 font-weight: 900;
-                color: @sky-blu;
+                color: @orange;
 
-                &:hover {
-                    text-shadow: 1.5px 1.5px 5px gray;
-                    transition: 0.5s;
-                }
             }
         }
 
@@ -586,7 +573,7 @@
     }
 
 
-    //---------------------ABOUT CONTAINER 600PX--------------------------
+    //---------------------ABOUT CONTAINER 770PX--------------------------
 
     .about-container {
         display: flex;
@@ -671,7 +658,7 @@
         }
     }
 
-    //--------------------------------BLOG CONTAINER 600PX------------------
+    //-------------------------BLOG CONTAINER 770PX------------------
 
     .blog-container {
         padding-top: 6vw;
@@ -750,7 +737,7 @@
         }
     }
 
-    //---------------FOOTER CONTAINER FOR 600PX---------------------------
+    //---------------FOOTER CONTAINER FOR 770PX---------------------------
 
     .footer-container {
         display: flex;
@@ -840,14 +827,11 @@
             }
 
             .address {
-
-                i {
-                    font-size: 6vw;
-                    padding-right: 2vw;
-                }
+                padding-bottom: 2vw;
 
                 li {
                     font-size: 3vw;
+                    text-align: center;
                 }
             }
         }
@@ -870,16 +854,18 @@
             height: 18vw;
 
             .logo {
-                // .ri-lock-unlock-fill {
-                //     font-size: 8vw;
-                // }
 
                 h2 {
                     font-size: 9vw;
+
                     span {
                         font-size: 6vw;
                         font-weight: 900;
-    
+
+                    }
+
+                    .dot {
+                        font-size: 4vw;
                     }
                 }
             }
@@ -892,35 +878,20 @@
                 display: block;
                 font-size: 9vw;
                 font-weight: 900;
-                color: @sky-blu;
-
-                &:hover {
-                    text-shadow: 1.5px 1.5px 5px gray;
-                    transition: 0.5s;
-                }
             }
         }
 
         .drop-down {
-            display: none;
             width: 95%;
-            background-color: #A1CCD1;
-            padding-top: 18vw;
-            position: fixed;
-            text-align: center;
-            z-index: 100;
-            padding-bottom: 4vw;
+            padding: 18vw 0;
             border-bottom-left-radius: 2vw;
             border-bottom-right-radius: 2vw;
 
             h3 {
-                padding-top: 6vw;
+                padding-top: 10vw;
 
                 a {
-                    text-decoration: none;
-                    font-size: 4vw;
-                    color: @dark-gray;
-                    font-family: @monst;
+                    font-size: 6vw;
                     font-weight: 600;
                 }
             }
@@ -1012,7 +983,7 @@
         h3 {
             font-size: 4vw;
             padding-bottom: 3vw;
-            
+
         }
 
         h1 {
@@ -1153,20 +1124,17 @@
         }
 
         .office {
-            margin-top: 9vw;
+            margin-top: 10vw;
             width: 100%;
             height: 100%;
 
             h2 {
                 font-size: 6.5vw;
+                padding-bottom: 3vw;
             }
 
             .address {
-
-                i {
-                    font-size: 7vw;
-                    padding-right: 2.4vw;
-                }
+                padding-bottom: 4vw;
 
                 li {
                     font-size: 4vw;
