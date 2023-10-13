@@ -39,9 +39,9 @@
   font-weight: 600;
   color: #053B50;
 }
-.nav-container .nav-bar .logo h2:hover {
-  text-shadow: 1.5px 1.5px 5px gray;
-  transition: all 0.5s ease-in-out;
+.nav-container .nav-bar .logo h2 .dot {
+  font-size: 2.5vw;
+  color: #EE6C32;
 }
 .nav-container .nav-bar .nav-contents {
   display: flex;
@@ -64,12 +64,12 @@
   font-size: 1.3vw;
   font-weight: 700;
   border: none;
-  background-color: #A1CCD1;
+  background-color: #EE6C32;
   color: #fff;
   border-radius: 25px;
 }
 .nav-container .nav-bar .nav-contents button:hover {
-  background-color: #053B50;
+  background-color: #B54F27;
   transition: all 0.3s ease-in-out;
 }
 .nav-container .nav-bar .ri-menu-3-fill {
@@ -104,6 +104,7 @@
   font-size: 1.3vw;
   font-family: 'Montserrat';
   color: #505050;
+  line-height: 1.5;
 }
 .service-container .service-cards {
   display: grid;
@@ -113,7 +114,7 @@
 }
 .service-container .service-cards .s-cards {
   border: 1px solid bisque;
-  border-radius: 4vw;
+  border-radius: 2vw;
   padding: 4vw 3vw;
   background-color: #fff;
 }
@@ -145,6 +146,80 @@
   background-color: #E9E5D9;
   transition: all 0.3s ease-in;
 }
+.why-choose-us-container {
+  height: 100%;
+  width: 95%;
+  background-color: #E9E5D9;
+  margin: 0 auto;
+  margin-top: 6vw;
+  display: flex;
+  padding: 3vw;
+  border-radius: 2vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.why-choose-us-container .choose-left {
+  width: 50%;
+  height: 100%;
+}
+.why-choose-us-container .choose-left h1 {
+  font-size: 3vw;
+  font-weight: 900;
+  font-family: 'Poppins';
+  color: #053B50;
+  line-height: 3.5vw;
+}
+.why-choose-us-container .choose-left h4 {
+  list-style-type: none;
+  padding: 1vw 0;
+  font-size: 1.3vw;
+  font-family: 'Montserrat';
+  color: #505050;
+  line-height: 1.5;
+}
+.why-choose-us-container .choose-left .why-image {
+  width: 45vw;
+  height: 30vw;
+  margin-top: 1vw;
+}
+.why-choose-us-container .choose-left .why-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2vw;
+}
+.why-choose-us-container .choose-right {
+  width: 45%;
+  height: 100%;
+}
+.why-choose-us-container .choose-right .trust-bond {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+}
+.why-choose-us-container .choose-right .trust-bond .t-content {
+  background-color: #A1CCD1;
+  padding: 2vw;
+  border-radius: 2vw;
+}
+.why-choose-us-container .choose-right .trust-bond .t-content h3 {
+  font-family: 'Poppins';
+  font-size: 2vw;
+  padding-bottom: 0.5vw;
+  color: #053B50;
+}
+.why-choose-us-container .choose-right .trust-bond .t-content h4 {
+  font-family: 'Montserrat';
+  font-size: 1.4vw;
+  font-weight: 900;
+  padding-bottom: 1vw;
+  color: #3B4D57;
+}
+.why-choose-us-container .choose-right .trust-bond .t-content h5 {
+  font-family: 'Montserrat';
+  font-size: 1.3vw;
+  line-height: 1.5;
+  color: #505050;
+}
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -152,7 +227,7 @@
   padding: 3vw;
   width: 95%;
   height: 100%;
-  border-radius: 4vw;
+  border-radius: 2vw;
   margin: 0 auto;
   margin-top: 6vw;
 }
@@ -264,21 +339,20 @@
   display: flex;
   line-height: 2;
   font-family: 'Montserrat';
-  align-items: center;
-}
-.footer-container .office .address i {
-  font-size: 2vw;
-  padding-right: 1vw;
-}
-.footer-container .office .address i:hover {
-  color: #EE6C32;
-  transition: all 0.5s ease-in-out;
+  padding-bottom: 1.5vw;
 }
 .footer-container .office .address li {
   font-size: 1.5vw;
   font-weight: 700;
 }
-@media (max-width: 600px) {
+.footer-container .office .address li a {
+  text-decoration: none;
+  color: #000;
+}
+.footer-container .office .address li a:hover {
+  color: blue;
+}
+@media (max-width: 770px) {
   .nav-container .nav-bar {
     align-items: center;
     position: fixed;
@@ -291,6 +365,9 @@
     font-size: 4.5vw;
     font-weight: 900;
   }
+  .nav-container .nav-bar .logo h2 .dot {
+    font-size: 4vw;
+  }
   .nav-container .nav-bar .nav-contents {
     display: none;
   }
@@ -298,11 +375,7 @@
     display: block;
     font-size: 7vw;
     font-weight: 900;
-    color: #A1CCD1;
-  }
-  .nav-container .nav-bar .ri-menu-3-fill:hover {
-    text-shadow: 1.5px 1.5px 5px gray;
-    transition: 0.5s;
+    color: #EE6C32;
   }
   .nav-container .drop-down {
     display: none;
@@ -365,6 +438,57 @@
   }
   .service-container .service-cards .s-cards li {
     font-size: 3vw;
+  }
+  .why-choose-us-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8vw 6vw;
+  }
+  .why-choose-us-container .choose-left {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .why-choose-us-container .choose-left h1 {
+    font-size: 6vw;
+    line-height: 6.5vw;
+    padding-bottom: 1.5vw;
+  }
+  .why-choose-us-container .choose-left h4 {
+    font-size: 2.5vw;
+    padding-bottom: 5vw;
+  }
+  .why-choose-us-container .choose-left .why-image {
+    width: 80vw;
+    height: 55vw;
+    margin: 0 auto;
+  }
+  .why-choose-us-container .choose-left .why-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .why-choose-us-container .choose-right {
+    width: 100%;
+    height: 100%;
+    padding-top: 5vw;
+  }
+  .why-choose-us-container .choose-right .trust-bond {
+    text-align: center;
+    gap: 5vw;
+  }
+  .why-choose-us-container .choose-right .trust-bond .t-content {
+    padding: 6vw 4vw;
+  }
+  .why-choose-us-container .choose-right .trust-bond .t-content h3 {
+    font-size: 4.2vw;
+    padding-bottom: 1vw;
+  }
+  .why-choose-us-container .choose-right .trust-bond .t-content h4 {
+    font-size: 2.8vw;
+    padding-bottom: 1vw;
+  }
+  .why-choose-us-container .choose-right .trust-bond .t-content h5 {
+    font-size: 2.6vw;
   }
   .footer-container {
     display: flex;
@@ -431,12 +555,12 @@
   .footer-container .office h2 {
     font-size: 5.5vw;
   }
-  .footer-container .office .address i {
-    font-size: 6vw;
-    padding-right: 2vw;
+  .footer-container .office .address {
+    padding-bottom: 2vw;
   }
   .footer-container .office .address li {
     font-size: 3vw;
+    text-align: center;
   }
 }
 @media (max-width: 420px) {
@@ -452,6 +576,9 @@
     font-size: 6vw;
     font-weight: 900;
   }
+  .nav-container .nav-bar .logo h2 .dot {
+    font-size: 4vw;
+  }
   .nav-container .nav-bar .nav-contents {
     display: none;
   }
@@ -459,32 +586,18 @@
     display: block;
     font-size: 9vw;
     font-weight: 900;
-    color: #A1CCD1;
-  }
-  .nav-container .nav-bar .ri-menu-3-fill:hover {
-    text-shadow: 1.5px 1.5px 5px gray;
-    transition: 0.5s;
   }
   .nav-container .drop-down {
-    display: none;
     width: 95%;
-    background-color: #A1CCD1;
-    padding-top: 18vw;
-    position: fixed;
-    text-align: center;
-    z-index: 100;
-    padding-bottom: 4vw;
+    padding: 18vw 0;
     border-bottom-left-radius: 2vw;
     border-bottom-right-radius: 2vw;
   }
   .nav-container .drop-down h3 {
-    padding-top: 6vw;
+    padding-top: 10vw;
   }
   .nav-container .drop-down h3 a {
-    text-decoration: none;
-    font-size: 4vw;
-    color: #505050;
-    font-family: 'Montserrat';
+    font-size: 6vw;
     font-weight: 600;
   }
   .service-container {
@@ -528,6 +641,53 @@
   }
   .service-container .service-cards .s-cards li {
     font-size: 4vw;
+  }
+  .why-choose-us-container {
+    padding: 10vw 6vw;
+  }
+  .why-choose-us-container .choose-left {
+    width: 100%;
+    height: 100%;
+  }
+  .why-choose-us-container .choose-left h1 {
+    font-size: 9vw;
+    padding-bottom: 4vw;
+  }
+  .why-choose-us-container .choose-left h4 {
+    font-size: 4vw;
+    padding-bottom: 6vw;
+  }
+  .why-choose-us-container .choose-left .why-image {
+    width: 80vw;
+    height: 55vw;
+    margin: 0 auto;
+  }
+  .why-choose-us-container .choose-left .why-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .why-choose-us-container .choose-right {
+    width: 100%;
+    height: 100%;
+    padding-top: 6vw;
+  }
+  .why-choose-us-container .choose-right .trust-bond {
+    text-align: center;
+    gap: 6vw;
+  }
+  .why-choose-us-container .choose-right .trust-bond .t-content {
+    padding: 8vw 4vw;
+  }
+  .why-choose-us-container .choose-right .trust-bond .t-content h3 {
+    font-size: 7vw;
+    padding-bottom: 2vw;
+  }
+  .why-choose-us-container .choose-right .trust-bond .t-content h4 {
+    font-size: 4vw;
+    padding-bottom: 2vw;
+  }
+  .why-choose-us-container .choose-right .trust-bond .t-content h5 {
+    font-size: 3.5vw;
   }
   .footer-container {
     padding: 6vw;

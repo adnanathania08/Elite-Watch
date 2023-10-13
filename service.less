@@ -50,16 +50,6 @@
             align-items: center;
             gap: 0.5vw;
     
-            // .ri-lock-unlock-fill {
-            //     font-size: 2.5vw;
-            //     color: @drk-blu;
-    
-            //     &:hover {
-            //         text-shadow: 1.5px 1.5px 5px gray;
-            //         transition: all 0.5s ease-in-out;
-            //     }
-    
-            // }
     
             h2 {
                 font-size: 3.5vw;
@@ -73,10 +63,9 @@
                     color: @drk-blu;
     
                 }
-
-                &:hover {
-                    text-shadow: 1.5px 1.5px 5px gray;
-                    transition: all 0.5s ease-in-out;
+                .dot {
+                    font-size: 2.5vw;
+                    color: @orange;
                 }
 
             }
@@ -108,12 +97,12 @@
                 font-size: 1.3vw;
                 font-weight: 700;
                 border: none;
-                background-color: @sky-blu;
+                background-color: @orange;
                 color: @wht;
                 border-radius: 25px;
     
                 &:hover {
-                    background-color: @drk-blu;
+                    background-color: @drk-orange;
                     transition: all 0.3s ease-in-out;
                 }
     
@@ -130,9 +119,6 @@
     
     
 }
-// .drop-down {
-//     display: none;
-// }
 
 //--------------------SERVICE CONTAINER--------------------
 .service-container {
@@ -161,6 +147,7 @@
         font-size: 1.3vw;
         font-family: @monst;
         color: @dark-gray;
+        line-height: 1.5;
     }
 
     .service-cards {
@@ -170,7 +157,7 @@
         padding-top: 3.5vw;
         .s-cards {
             border: 1px solid bisque;
-            border-radius: 4vw;
+            border-radius: 2vw;
             padding: 4vw 3vw;
             background-color: @wht;
             i {
@@ -205,7 +192,88 @@
     }
 
 }
+//----------------WHY-CHOOSE-US-CONTAINER--------------------
 
+.why-choose-us-container {
+    height: 100%;
+    width: 95%;
+    background-color: @lgt-beige;
+    margin: 0 auto;
+    margin-top: 6vw;
+    display: flex;
+    padding: 3vw;
+    border-radius: 2vw;
+    align-items: center;
+    justify-content: space-between;
+    .choose-left {
+        width: 50%;
+        height: 100%;
+        h1 {
+            font-size: 3vw;
+            font-weight: 900;
+            font-family: @popins;
+            color: @drk-blu;
+            line-height: 3.5vw;
+    
+        }
+
+        h4 {
+            list-style-type: none;
+            padding: 1vw 0;
+            font-size: 1.3vw;
+            font-family: @monst;
+            color: @dark-gray;
+            line-height: 1.5;
+    
+        }
+        .why-image {
+            width: 45vw;
+            height: 30vw;
+            margin-top: 1vw;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 2vw;
+            }
+        }
+
+    }
+
+    .choose-right {
+        width: 45%;
+        height: 100%;
+        .trust-bond {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5vw;
+            .t-content {
+                background-color: #A1CCD1;
+                padding: 2vw;
+                border-radius: 2vw;
+                
+                h3 {
+                    font-family: @popins;
+                    font-size: 2vw;
+                    padding-bottom: 0.5vw;
+                    color: @drk-blu;
+                }
+                h4 {
+                    font-family: @monst;
+                    font-size: 1.4vw;
+                    font-weight: 900;
+                    padding-bottom: 1vw;
+                    color: @blu-grn;
+                }
+                h5 {
+                    font-family: @monst;
+                    font-size: 1.3vw;
+                    line-height: 1.5;
+                    color: @dark-gray;
+                }
+            }
+        }
+    }
+}
 //----------------FOOTER CONTAINER-----------------------------------
 
 .footer-container {
@@ -216,21 +284,24 @@
     margin-top: 6vw;
     width: 95%;
     height: 100%;
-    border-radius: 4vw;
+    border-radius: 2vw;
     margin: 0 auto;
     margin-top: 6vw;
     .socials {
         width: 45%;
         height: 100%;
+
         .logo {
             display: flex;
             align-items: center;
             gap: 0.5vw;
             padding-bottom: 1.5vw;
+
             i {
                 font-size: 2vw;
                 color: @drk-blu;
             }
+
             h2 {
                 font-size: 2.5vw;
                 font-family: @lobst;
@@ -238,9 +309,11 @@
                 color: @drk-blu;
             }
         }
+
         .text {
             list-style-type: none;
             padding-bottom: 1.5vw;
+
             li {
                 font-size: 1.5vw;
                 font-family: @monst;
@@ -248,15 +321,18 @@
                 line-height: 1.8;
             }
         }
+
         .social-icons {
             display: flex;
             gap: 1vw;
+
             i {
                 background-color: @blk;
                 color: @wht;
                 padding: 1.2vw;
                 font-size: 1.8vw;
                 border-radius: 5vw;
+
                 &:hover {
                     background-color: @wht;
                     color: @blk;
@@ -273,14 +349,17 @@
         list-style-type: none;
         text-align: center;
         padding-right: 2vw;
+
         h2 {
             font-size: 2.5vw;
             font-family: @monst;
         }
+
         .navigations {
             display: flex;
             justify-content: space-around;
             padding-top: 1.7vw;
+
             .left-N {
                 display: flex;
                 flex-direction: column;
@@ -322,8 +401,10 @@
                 }
 
             }
+
         }
     }
+
     .office {
         width: 27%;
         height: 100%;
@@ -339,30 +420,32 @@
             display: flex;
             line-height: 2;
             font-family: @monst;
-            align-items: center;
-            i {
-                font-size: 2vw;
-                padding-right: 1vw;
-                &:hover {
-                    color: @orange;
-                    transition: all 0.5s ease-in-out;
-                }
+            padding-bottom: 1.5vw;
 
-            }
+
             li {
                 font-size: 1.5vw;
                 font-weight: 700;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+
+                    &:hover {
+                        color: blue;
+                    }
+                }
             }
         }
     }
 
 }
 
-//--------------MEDIA QUERIES FOR 600PX--------------------
+//--------------MEDIA QUERIES FOR 770PX--------------------
 
-@media (max-width:600px) {
+@media (max-width:770px) {
 
-    //-----------------NAV-CONTAINER 600PX---------------------
+    //-----------------NAV-CONTAINER 770PX---------------------
 
     .nav-container {
 
@@ -372,10 +455,6 @@
             height: 14vw;
 
             .logo {
-                // .ri-lock-unlock-fill {
-                //     font-size: 5vw;
-                // }
-
                 h2 {
                     font-size: 7vw;
                     span {
@@ -383,6 +462,11 @@
                         font-weight: 900;
     
                     }
+                    
+                    .dot {
+                        font-size: 4vw;
+                    }
+
                 }
             }
 
@@ -394,12 +478,8 @@
                 display: block;
                 font-size: 7vw;
                 font-weight: 900;
-                color: @sky-blu;
+                color: @orange;
 
-                &:hover {
-                    text-shadow: 1.5px 1.5px 5px gray;
-                    transition: 0.5s;
-                }
             }
         }
         .drop-down {
@@ -429,35 +509,8 @@
     
 
     }
-    // .drop-down {
-    //     left: 50%;
-    //     top: 30%;
-    //     transform: translate(-50%,-50%);
-    //     display: block;
-    //     width: 95%;
-    //     z-index: 100;
-    //     background-color: #A1CCD1;
-    //     position: fixed;
-    //     text-align: center;
-    //     padding-bottom: 4vw;
-    //     border-bottom-left-radius: 2vw;
-    //     border-bottom-right-radius: 2vw;
-    //     h3 {
-    //         padding-top: 6vw;
 
-    //         a {
-    //             text-decoration: none;
-    //             font-size: 4vw;
-    //             color: @dark-gray;
-    //             font-family: @monst;
-    //             font-weight: 600;
-    //         }
-    //     }
-
-    // }
-
-
-    //----------------SERVICE CONTAINER 600PX------------------------
+    //----------------SERVICE CONTAINER 770PX------------------------
 
     .service-container {
         padding-top: 18vw;
@@ -501,7 +554,64 @@
         }
     }
 
-    //---------------FOOTER CONTAINER FOR 600PX---------------------------
+    //----------------WHY-CHOOSE-US-CONTAINER 770px--------------------
+    .why-choose-us-container {  
+        display: flex;
+        flex-direction: column;
+        padding: 8vw 6vw;
+        .choose-left {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            h1 {
+                font-size: 6vw;
+                line-height: 6.5vw;
+                padding-bottom: 1.5vw;
+    
+            }
+
+            h4 {
+                font-size: 2.5vw;
+                padding-bottom: 5vw;
+    
+            }
+            .why-image {
+                width: 80vw;
+                height: 55vw;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .choose-right { 
+            width: 100%;
+            height: 100%;
+            padding-top: 5vw;
+            .trust-bond {
+                text-align: center;
+                gap: 5vw;
+                .t-content {
+                    padding: 6vw 4vw;
+                    h3 {
+                        font-size: 4.2vw;
+                        padding-bottom: 1vw;
+                    }
+                    h4 {
+                        font-size: 2.8vw;
+                        padding-bottom: 1vw;
+                    }
+                    h5 {
+                        font-size: 2.6vw;
+                    }
+                }
+            }
+        }
+    }
+
+    //---------------FOOTER CONTAINER FOR 770PX---------------------------
   
     .footer-container {
         display: flex;
@@ -579,17 +689,16 @@
             h2 {
                 font-size: 5.5vw;
             }
-            .address {
 
-                i {
-                    font-size: 6vw;
-                    padding-right: 2vw;
-                }
+            .address {
+                padding-bottom: 2vw;
+
                 li {
                     font-size: 3vw;
+                    text-align: center;
                 }
             }
-        }   
+        }
     }
 
 
@@ -612,9 +721,6 @@
             height: 18vw;
 
             .logo {
-                // .ri-lock-unlock-fill {
-                //     font-size: 8vw;
-                // }
 
                 h2 {
                     font-size: 9vw;
@@ -623,6 +729,10 @@
                         font-weight: 900;
     
                     }
+                    .dot {
+                        font-size: 4vw;
+                    }
+
                 }
             }
 
@@ -634,38 +744,25 @@
                 display: block;
                 font-size: 9vw;
                 font-weight: 900;
-                color: @sky-blu;
-
-                &:hover {
-                    text-shadow: 1.5px 1.5px 5px gray;
-                    transition: 0.5s;
-                }
             }
         }
         .drop-down {
-            display: none;
             width: 95%;
-            background-color: #A1CCD1;
-            padding-top: 18vw;
-            position: fixed;
-            text-align: center;
-            z-index: 100;
-            padding-bottom: 4vw;
+            padding: 18vw 0;
             border-bottom-left-radius: 2vw;
             border-bottom-right-radius: 2vw;
+
             h3 {
-                padding-top: 6vw;
-    
+                padding-top: 10vw;
+
                 a {
-                    text-decoration: none;
-                    font-size: 4vw;
-                    color: @dark-gray;
-                    font-family: @monst;
+                    font-size: 6vw;
                     font-weight: 600;
                 }
             }
-    
+
         }
+
     
 
     }
@@ -716,6 +813,59 @@
             }
         }
     }
+        //----------------WHY-CHOOSE-US-CONTAINER 420px--------------------
+        .why-choose-us-container {  
+            padding: 10vw 6vw;
+            .choose-left {
+                width: 100%;
+                height: 100%;
+                h1 {
+                    font-size: 9vw;
+                    
+                    padding-bottom: 4vw;
+        
+                }
+    
+                h4 {
+                    font-size: 4vw;
+                    padding-bottom: 6vw;
+        
+                }
+                .why-image {
+                    width: 80vw;
+                    height: 55vw;
+                    margin: 0 auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+    
+            .choose-right { 
+                width: 100%;
+                height: 100%;
+                padding-top: 6vw;
+                .trust-bond {
+                    text-align: center;
+                    gap: 6vw;
+                    .t-content {
+                        padding: 8vw 4vw;
+                        h3 {
+                            font-size: 7vw;
+                            padding-bottom: 2vw;
+                        }
+                        h4 {
+                            font-size: 4vw;
+                            padding-bottom: 2vw;
+                        }
+                        h5 {
+                            font-size: 3.5vw;
+                        }
+                    }
+                }
+            }
+        }
     //---------FOOTER CONTAINER FOR 420PX-----------------------
     .footer-container {
         padding: 6vw;
