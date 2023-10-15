@@ -777,7 +777,7 @@
     padding-bottom: 6vw;
   }
   .contact-container .right-sec h4 li {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .contact-container .right-sec .left-right-sec .inputs {
     margin-top: 8vw;
@@ -793,9 +793,9 @@
   }
   .contact-container .right-sec .left-right-sec .inputs .part-one .in-bar input {
     width: 100%;
-    padding: 3vw;
+    padding: 4vw;
     font-size: 3vw;
-    border-radius: 5.5vw;
+    border-radius: 6vw;
   }
   .contact-container .right-sec .left-right-sec .inputs .part-one .in-bar label {
     font-size: 2.5vw;
@@ -815,8 +815,8 @@
   }
   .contact-container .right-sec .left-right-sec .inputs .part-two .in-bar input {
     width: 100%;
-    padding: 3vw;
-    border-radius: 5.5vw;
+    padding: 4vw;
+    border-radius: 6vw;
     font-size: 3vw;
   }
   .contact-container .right-sec .left-right-sec .inputs .part-two .in-bar label {
@@ -828,8 +828,8 @@
   }
   .contact-container .right-sec .left-right-sec .inputs .part-three .in-bar textarea {
     width: 100%;
-    padding: 3vw;
-    border-radius: 5.5vw;
+    padding: 4vw;
+    border-radius: 6vw;
     font-size: 3vw;
   }
   .contact-container .right-sec .left-right-sec .inputs .part-three .in-bar label {
@@ -842,7 +842,7 @@
   .contact-container .right-sec .left-right-sec .inputs .sbmt-btn button {
     padding: 4vw 8vw;
     font-size: 3.5vw;
-    margin-top: 6vw;
+    margin-top: 5vw;
     border-radius: 6vw;
   }
   .contact-container .right-sec .left-right-sec .right-sec-loc {
@@ -858,30 +858,30 @@
     padding-bottom: 1vw;
   }
   .contact-container .right-sec .left-right-sec .right-sec-loc .sec-mail li {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .contact-container .right-sec .left-right-sec .right-sec-loc .sec-location {
-    padding-top: 4vw;
+    padding-top: 6vw;
   }
   .contact-container .right-sec .left-right-sec .right-sec-loc .sec-location h4 {
     font-size: 6vw;
     padding-bottom: 1vw;
   }
   .contact-container .right-sec .left-right-sec .right-sec-loc .sec-location li {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .contact-container .right-sec .left-right-sec .right-sec-loc .sec-working-hrs {
-    padding-top: 4vw;
+    padding-top: 6vw;
   }
   .contact-container .right-sec .left-right-sec .right-sec-loc .sec-working-hrs h4 {
     font-size: 6vw;
     padding-bottom: 1vw;
   }
   .contact-container .right-sec .left-right-sec .right-sec-loc .sec-working-hrs p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .contact-container .right-sec .left-right-sec .right-sec-loc .sec-working-hrs li {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .footer-container {
     padding: 6vw;
