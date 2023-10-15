@@ -360,14 +360,17 @@
   display: flex;
   gap: 1vw;
 }
-.footer-container .socials .social-icons i {
+.footer-container .socials .social-icons a {
+  text-decoration: none;
+}
+.footer-container .socials .social-icons a i {
   background-color: #000;
   color: #fff;
   padding: 1.2vw;
   font-size: 1.8vw;
   border-radius: 5vw;
 }
-.footer-container .socials .social-icons i:hover {
+.footer-container .socials .social-icons a i:hover {
   background-color: #fff;
   color: #000;
   transition: all 0.5s ease-in-out;
@@ -671,7 +674,7 @@
   .footer-container .socials .text li {
     font-size: 3vw;
   }
-  .footer-container .socials .social-icons i {
+  .footer-container .socials .social-icons a i {
     font-size: 5vw;
     padding: 2.5vw;
   }
@@ -786,7 +789,7 @@
   }
   .contact-container .right-sec .left-right-sec .inputs .part-one {
     margin-bottom: 5vw;
-    gap: 5vw;
+    gap: 8vw;
   }
   .contact-container .right-sec .left-right-sec .inputs .part-one .in-bar {
     width: 100%;
@@ -794,21 +797,21 @@
   .contact-container .right-sec .left-right-sec .inputs .part-one .in-bar input {
     width: 100%;
     padding: 4vw;
-    font-size: 3vw;
-    border-radius: 6vw;
+    font-size: 4.5vw;
+    border-radius: 6.5vw;
   }
   .contact-container .right-sec .left-right-sec .inputs .part-one .in-bar label {
-    font-size: 2.5vw;
-    left: 4.5vw;
-    top: -1.7vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    font-size: 3.5vw;
+    left: 5.5vw;
+    top: -2vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
   }
   .contact-container .right-sec .left-right-sec .inputs .part-two {
-    margin-bottom: 5vw;
+    margin-bottom: 8vw;
     display: flex;
     flex-direction: column;
-    gap: 5vw;
+    gap: 8vw;
   }
   .contact-container .right-sec .left-right-sec .inputs .part-two .in-bar {
     width: 100%;
@@ -816,32 +819,32 @@
   .contact-container .right-sec .left-right-sec .inputs .part-two .in-bar input {
     width: 100%;
     padding: 4vw;
-    border-radius: 6vw;
-    font-size: 3vw;
+    border-radius: 6.5vw;
+    font-size: 4.5vw;
   }
   .contact-container .right-sec .left-right-sec .inputs .part-two .in-bar label {
-    font-size: 2.5vw;
-    left: 4.5vw;
-    top: -1.7vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    font-size: 3.5vw;
+    left: 5.5vw;
+    top: -2vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
   }
   .contact-container .right-sec .left-right-sec .inputs .part-three .in-bar textarea {
     width: 100%;
     padding: 4vw;
-    border-radius: 6vw;
-    font-size: 3vw;
+    border-radius: 6.5vw;
+    font-size: 4.5vw;
   }
   .contact-container .right-sec .left-right-sec .inputs .part-three .in-bar label {
-    font-size: 2.5vw;
-    left: 4.5vw;
-    top: -1.7vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    font-size: 3.5vw;
+    left: 5.5vw;
+    top: -2vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
   }
   .contact-container .right-sec .left-right-sec .inputs .sbmt-btn button {
-    padding: 4vw 8vw;
-    font-size: 3.5vw;
+    padding: 5vw 9vw;
+    font-size: 4vw;
     margin-top: 5vw;
     border-radius: 6vw;
   }
@@ -906,7 +909,7 @@
   .footer-container .socials .text li {
     font-size: 4.5vw;
   }
-  .footer-container .socials .social-icons i {
+  .footer-container .socials .social-icons a i {
     font-size: 6.5vw;
     padding: 3vw;
     border-radius: 7.5vw;

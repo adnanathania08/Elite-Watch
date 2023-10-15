@@ -125,16 +125,14 @@
 .about-container .left-sec .since .experience .num {
   width: 25%;
   font-size: 3vw;
-  background: #B54F27;
-  background: linear-gradient(to bottom left, #B54F27 0%, #A1CCD1 50%, #176B87 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   font-family: 'Poppins';
 }
-.about-container .left-sec .since .experience .num:hover {
-  transform: scale(1.08);
-  transition: all 0.4s ease-in;
+.about-container .left-sec .since .experience .num i {
+  align-items: center;
+  color: #EE6C32;
 }
 .about-container .left-sec .since .experience .content {
   font-family: 'Montserrat';
@@ -258,14 +256,17 @@
   display: flex;
   gap: 1vw;
 }
-.footer-container .socials .social-icons i {
+.footer-container .socials .social-icons a {
+  text-decoration: none;
+}
+.footer-container .socials .social-icons a i {
   background-color: #000;
   color: #fff;
   padding: 1.2vw;
   font-size: 1.8vw;
   border-radius: 5vw;
 }
-.footer-container .socials .social-icons i:hover {
+.footer-container .socials .social-icons a i:hover {
   background-color: #fff;
   color: #000;
   transition: all 0.5s ease-in-out;
@@ -549,7 +550,7 @@
   .footer-container .socials .text li {
     font-size: 3vw;
   }
-  .footer-container .socials .social-icons i {
+  .footer-container .socials .social-icons a i {
     font-size: 5vw;
     padding: 2.5vw;
   }
@@ -759,7 +760,7 @@
   .footer-container .socials .text li {
     font-size: 4.5vw;
   }
-  .footer-container .socials .social-icons i {
+  .footer-container .socials .social-icons a i {
     font-size: 6.5vw;
     padding: 3vw;
     border-radius: 7.5vw;

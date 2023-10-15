@@ -326,19 +326,23 @@
             display: flex;
             gap: 1vw;
 
-            i {
-                background-color: @blk;
-                color: @wht;
-                padding: 1.2vw;
-                font-size: 1.8vw;
-                border-radius: 5vw;
-
-                &:hover {
-                    background-color: @wht;
-                    color: @blk;
-                    transition: all 0.5s ease-in-out;
+            a {
+                text-decoration: none;
+                i {
+                    background-color: @blk;
+                    color: @wht;
+                    padding: 1.2vw;
+                    font-size: 1.8vw;
+                    border-radius: 5vw;
+    
+                    &:hover {
+                        background-color: @wht;
+                        color: @blk;
+                        transition: all 0.5s ease-in-out;
+                    }
+    
                 }
-
+    
             }
         }
     }
@@ -640,9 +644,12 @@
                 }
             }
             .social-icons {
-                i {
-                    font-size: 5vw;
-                    padding: 2.5vw;
+                a {
+                    i {
+                        font-size: 5vw;
+                        padding: 2.5vw;
+                    }
+    
                 }
             }
         }
@@ -888,10 +895,13 @@
                 }
             }
             .social-icons {
-                i {
-                    font-size: 6.5vw;
-                    padding: 3vw;
-                    border-radius: 7.5vw;
+                a {
+                    i {
+                        font-size: 6.5vw;
+                        padding: 3vw;
+                        border-radius: 7.5vw;
+                    }
+    
                 }
             }
         }

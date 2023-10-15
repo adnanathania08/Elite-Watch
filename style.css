@@ -467,14 +467,17 @@
   display: flex;
   gap: 1vw;
 }
-.sixth-container .socials .social-icons i {
+.sixth-container .socials .social-icons a {
+  text-decoration: none;
+}
+.sixth-container .socials .social-icons a i {
   background-color: #000;
   color: #fff;
   padding: 1.2vw;
   font-size: 1.8vw;
   border-radius: 5vw;
 }
-.sixth-container .socials .social-icons i:hover {
+.sixth-container .socials .social-icons a i:hover {
   background-color: #fff;
   color: #000;
   transition: all 0.5s ease-in-out;
@@ -834,7 +837,7 @@
   .main-container .sixth-container .socials .text li {
     font-size: 3vw;
   }
-  .main-container .sixth-container .socials .social-icons i {
+  .main-container .sixth-container .socials .social-icons a i {
     font-size: 5vw;
     padding: 2.5vw;
   }
@@ -1124,7 +1127,7 @@
   .main-container .sixth-container .socials .text li {
     font-size: 4.5vw;
   }
-  .main-container .sixth-container .socials .social-icons i {
+  .main-container .sixth-container .socials .social-icons a i {
     font-size: 6.5vw;
     padding: 3vw;
     border-radius: 7.5vw;
