@@ -54,16 +54,6 @@
             align-items: center;
             gap: 0.5vw;
 
-            // .ri-lock-unlock-fill {
-            //     font-size: 2.5vw;
-            //     color: @drk-blu;
-
-            //     &:hover {
-            //         text-shadow: 1.5px 1.5px 5px gray;
-            //         transition: all 0.5s ease-in-out;
-            //     }
-
-            // }
 
             h2 {
                 font-size: 3.5vw;
@@ -77,10 +67,9 @@
                     color: @drk-blu;
     
                 }
-
-                &:hover {
-                    text-shadow: 1.5px 1.5px 5px gray;
-                    transition: all 0.5s ease-in-out;
+                .dot {
+                    color: @orange;
+                    font-size: 2.5vw;
                 }
 
             }
@@ -112,12 +101,12 @@
                 font-size: 1.3vw;
                 font-weight: 700;
                 border: none;
-                background-color: @sky-blu;
+                background-color: @orange;
                 color: @wht;
                 border-radius: 25px;
 
                 &:hover {
-                    background-color: @drk-blu;
+                    background-color: @drk-orange;
                     transition: all 0.3s ease-in-out;
                 }
 
@@ -144,27 +133,24 @@
     margin: 0 auto;
     padding-top: 10vw;
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     .left-sec {
-        width: 50%;
+        width: 100%;
         height: 100%;
 
         .gmap_iframe {
-            border-radius: 3.2vw;
-
+            border-radius: 2vw;
         }
 
     }
 
     .right-sec {
-        width: 48%;
+        width: 100%;
         height: 100%;
         padding: 2.5vw;
         background-color: @lgt-beige;
-        border-radius: 3.5vw;
+        border-radius: 2vw;
+        margin-top: 6vw;
 
         h3 {
             font-size: 1.3vw;
@@ -194,148 +180,234 @@
             }
 
         }
-
-        .inputs {
-            margin-top: 3vw;
-
-            .part-one {
-                display: flex;
-                margin-bottom: 2vw;
-                gap: 1.5vw;
-
-                .in-bar {
-                    width: 60%;
-                    max-width: 100%;
-                    position: relative;
-
-                    input {
-                        background: transparent;
-                        width: 100%;
-                        padding: 1vw;
-                        border-radius: 2vw;
-                        outline: none;
-                        border: 2px solid @blu-grn;
-                        font-size: 1.5vw;
-                        font-weight: 400;
-                        color: @dark-gray;
+        .left-right-sec {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding-top: 3vw;
+            justify-content: space-between;
+            .inputs {
+                width: 50%;
+                height: 100%;
+    
+                .part-one {
+                    display: flex;
+                    margin-bottom: 2vw;
+                    gap: 1.5vw;
+    
+                    .in-bar {
+                        width: 60%;
+                        max-width: 100%;
+                        position: relative;
+    
+                        input {
+                            background: transparent;
+                            width: 100%;
+                            padding: 1vw;
+                            border-radius: 2vw;
+                            outline: none;
+                            border: 2px solid @blu-grn;
+                            font-size: 1.5vw;
+                            font-weight: 400;
+                            color: @dark-gray;
+                        }
+    
+                        label {
+                            position: absolute;
+                            top: -0.7vw;
+                            background-color: @lgt-beige;
+                            left: 2vw;
+                            padding-left: 1vw;
+                            padding-right: 1vw;
+                            font-family: @monst;
+                            font-size: 1vw;
+                            font-weight: 600;
+                            color: @med-blu;
+    
+    
+                        }
                     }
-
-                    label {
-                        position: absolute;
-                        top: -0.7vw;
-                        background-color: @lgt-beige;
-                        left: 2vw;
-                        padding-left: 1vw;
-                        padding-right: 1vw;
-                        font-family: @monst;
-                        font-size: 1vw;
+                }
+    
+                .part-two {
+                    display: flex;
+                    margin-bottom: 3vw;
+                    gap: 1.5vw;
+    
+                    .in-bar {
+                        width: 60%;
+                        max-width: 100%;
+                        position: relative;
+    
+                        input {
+                            width: 100%;
+                            background: transparent;
+                            width: 100%;
+                            padding: 1vw;
+                            border-radius: 2vw;
+                            outline: none;
+                            border: 2px solid @blu-grn;
+                            font-size: 1.5vw;
+                            font-weight: 400;
+                            color: @dark-gray;
+    
+                        }
+    
+                        label {
+                            position: absolute;
+                            top: -0.7vw;
+                            background-color: @lgt-beige;
+                            left: 2vw;
+                            padding-left: 1vw;
+                            padding-right: 1vw;
+                            font-family: @monst;
+                            font-size: 1vw;
+                            font-weight: 600;
+                            color: @med-blu;
+    
+                        }
+    
+                    }
+                }
+    
+                .part-three {
+    
+                    .in-bar {
+                        width: 100%;
+                        max-width: 100%;
+                        position: relative;
+    
+                        textarea {
+                            width: 100%;
+                            background: transparent;
+                            width: 100%;
+                            padding: 1vw;
+                            border-radius: 2vw;
+                            outline: none;
+                            border: 2px solid @blu-grn;
+                            font-size: 1.5vw;
+                            font-weight: 400;
+                            color: @dark-gray;
+    
+                        }
+    
+                        label {
+                            position: absolute;
+                            top: -0.7vw;
+                            background-color: @lgt-beige;
+                            left: 2vw;
+                            padding-left: 1vw;
+                            padding-right: 1vw;
+                            font-family: @monst;
+                            font-size: 1vw;
+                            font-weight: 600;
+                            color: @med-blu;
+    
+    
+                        }
+                    }
+                }
+    
+                .sbmt-btn {
+                    text-align: center;
+                    margin-top: 2vw;
+    
+                    button {
+                        padding: 1.3vw 2.6vw;
+                        color: @blu-grn;
+                        background: @sky-blu;
+                        border-radius: 4vw;
+                        font-size: 1.3vw;
                         font-weight: 600;
-                        color: @dark-gray;
-
-
+                        font-family: @monst;
+                        border: none;
+    
+                        &:hover {
+                            box-shadow: 0 0 0.5vw gray ;
+                            transition: all 0.5 ease-in-out;
+                        }
+    
                     }
                 }
             }
+    
+        }
 
-            .part-two {
-                display: flex;
-                margin-bottom: 3vw;
-                gap: 1.5vw;
-
-                .in-bar {
-                    width: 60%;
-                    max-width: 100%;
-                    position: relative;
-
-                    input {
-                        width: 100%;
-                        background: transparent;
-                        width: 100%;
-                        padding: 1vw;
-                        border-radius: 2vw;
-                        outline: none;
-                        border: 2px solid @blu-grn;
-                        font-size: 1.5vw;
-                        font-weight: 400;
-                        color: @dark-gray;
-
-                    }
-
-                    label {
-                        position: absolute;
-                        top: -0.7vw;
-                        background-color: @lgt-beige;
-                        left: 2vw;
-                        padding-left: 1vw;
-                        padding-right: 1vw;
-                        font-family: @monst;
-                        font-size: 1vw;
-                        font-weight: 600;
-                        color: @dark-gray;
-
-                    }
-
+        .right-sec-loc {
+            width: 45%;
+            height: 100%;
+            .sec-mail {
+                h4 {
+                    font-size: 1.5vw;
+                    font-family: @popins;
+                    padding-bottom: 0.3vw;
+                    color: @drk-blu;
                 }
-            }
-
-            .part-three {
-
-                .in-bar {
-                    width: 100%;
-                    max-width: 100%;
-                    position: relative;
-
-                    textarea {
-                        width: 100%;
-                        background: transparent;
-                        width: 100%;
-                        padding: 1vw;
-                        border-radius: 2vw;
-                        outline: none;
-                        border: 2px solid @blu-grn;
-                        font-size: 1.5vw;
-                        font-weight: 400;
-                        color: @dark-gray;
-
-                    }
-
-                    label {
-                        position: absolute;
-                        top: -0.7vw;
-                        background-color: @lgt-beige;
-                        left: 2vw;
-                        padding-left: 1vw;
-                        padding-right: 1vw;
-                        font-family: @monst;
-                        font-size: 1vw;
-                        font-weight: 600;
-                        color: @dark-gray;
-
-
-                    }
-                }
-            }
-
-            .sbmt-btn {
-                text-align: center;
-                margin-top: 2vw;
-
-                button {
-                    padding: 1.3vw 2.6vw;
-                    color: @blu-grn;
-                    background: transparent;
-                    border-radius: 4vw;
+                li {
                     font-size: 1.3vw;
-                    font-weight: 600;
                     font-family: @monst;
-                    border: none;
-                    border: 2px solid @blu-grn;
-
-                    &:hover {
-                        box-shadow: 0 0 0.5vw gray inset;
-                        transition: all 0.5 ease-in-out;
+                    color: @dark-gray;
+                    line-height: 1.5;
+                    font-weight: 600;
+                    span {
+                        font-weight: 900;
+                        font-family: @popins;
                     }
+                    a {
+                        color: @med-blu;
+                        text-decoration: none;
+                        &:hover {
+                            color: blue;
+                        }
+                    }
+                }
+    
+            }
 
+            .sec-location {
+                padding-top: 2vw;
+                h4 {    
+                    font-size: 1.5vw;
+                    font-family: @popins;
+                    padding-bottom: 0.3vw;
+                    color: @drk-blu;
+                }
+                li {
+                    font-size: 1.3vw;
+                    font-family: @monst;
+                    color: @dark-gray;
+                    line-height: 1.5;
+                    font-weight: 600;
+                }
+            }
+
+            .sec-working-hrs {
+                padding-top: 2vw;
+                h4 {
+                    font-size: 1.5vw;
+                    font-family: @popins;
+                    padding-bottom: 0.3vw;
+                    color: @drk-blu;
+                }
+                p {
+                    font-size: 1.3vw;
+                    font-family: @monst;
+                    color: @dark-gray;
+                    line-height: 1.5;
+                    font-weight: 600;
+                }
+                li {
+                    font-size: 1.3vw;
+                    font-family: @monst;
+                    color: @dark-gray;
+                    line-height: 1.5;
+                    font-weight: 600;
+
+                    span {
+                        font-weight: 900;
+                        font-family: @popins;
+
+                    }
                 }
             }
         }
@@ -504,16 +576,25 @@
             li {
                 font-size: 1.5vw;
                 font-weight: 700;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+
+                    &:hover {
+                        color: blue;
+                    }
+                }
             }
         }
     }
 
 }
 
-//-------------------MEDIA QUERIES FOR 600PX----------------------------
-@media (max-width:600px) {
+//-------------------MEDIA QUERIES FOR 770PX----------------------------
+@media (max-width:770px) {
 
-    //---------------NAV-CONTAINER 600PX-------------------
+    //---------------NAV-CONTAINER 770PX-------------------
     .nav-container {
 
         .nav-bar {
@@ -522,9 +603,6 @@
             height: 14vw;
 
             .logo {
-                // .ri-lock-unlock-fill {
-                //     font-size: 5vw;
-                // }
 
                 h2 {
                     font-size: 7vw;
@@ -533,6 +611,10 @@
                         font-weight: 900;
     
                     }
+                    .dot {
+                        font-size: 4vw;
+                    }
+
                 }
             }
 
@@ -544,21 +626,17 @@
                 display: block;
                 font-size: 7vw;
                 font-weight: 900;
-                color: @sky-blu;
+                color: @orange;
 
-                &:hover {
-                    text-shadow: 1.5px 1.5px 5px gray;
-                    transition: 0.5s;
-                }
             }
         }
         .drop-down {
             display: none;
             width: 95%;
             z-index: 100;
+            padding-top: 16vw;
             background-color: #A1CCD1;
             position: fixed;
-            padding-top: 16vw;
             text-align: center;
             padding-bottom: 4vw;
             border-bottom-left-radius: 2vw;
@@ -576,12 +654,11 @@
             }
     
         }
-    
 
     }
 
 
-    //----------------CONTACT-CONTAINER 600PX----------
+    //----------------CONTACT-CONTAINER 770PX----------
     .contact-container {
         padding-top: 18vw;
         width: 95%;
@@ -601,6 +678,7 @@
             width: 100%;
             height: 100%;
             margin-top: 8vw;
+            padding: 8vw 6vw;
 
             h3 {
                 font-size: 3vw;
@@ -619,95 +697,149 @@
                 }
             }
 
-
-            .inputs {
-                margin-top: 8vw;
-
-                .part-one {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    margin-bottom: 5vw;
-                    gap: 5vw;
-
-                    .in-bar {
-                        width: 100%;
-
-                        input {
+            .left-right-sec {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .inputs {
+                    margin-top: 8vw;
+                    width: 100%;
+                    height: 100%;
+                    .part-one {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        margin-bottom: 5vw;
+                        gap: 5vw;
+    
+                        .in-bar {
                             width: 100%;
-                            padding: 3vw;
-                            border-radius: 5.5vw;
+    
+                            input {
+                                width: 100%;
+                                padding: 3vw;
+                                font-size: 2.5vw;
+                                border-radius: 5.5vw;
+                            }
+    
+                            label {
+                                font-size: 2.5vw;
+                                left: 4.5vw;
+                                top: -1.7vw;
+                                padding-left: 2vw;
+                                padding-right: 2vw;
+    
+                            }
+    
                         }
+                    }
+    
+                    .part-two {
+                        margin-bottom: 5vw;
+    
+                        .in-bar {
+    
+                            input {
+                                width: 100%;
+                                padding: 3vw;
+                                border-radius: 5.5vw;
+                                font-size: 2.5vw;
+                            }
+    
+                            label {
+                                font-size: 2.5vw;
+                                left: 4.5vw;
+                                top: -1.7vw;
+                                padding-left: 2vw;
+                                padding-right: 2vw;
+    
+                            }
+    
+                        }
+                    }
+    
+                    .part-three {
+    
+                        .in-bar {
+                            textarea {
+                                width: 100%;
+                                padding: 3vw;
+                                border-radius: 5.5vw;
+                                font-size: 2.5vw;
+                            }
+    
+                            label {
+                                font-size: 2.5vw;
+                                left: 4.5vw;
+                                top: -1.7vw;
+                                padding-left: 2vw;
+                                padding-right: 2vw;
+    
+                            }
+                        }
+    
+                    }
+    
+                    .sbmt-btn {
+                        button {
+                            padding: 2.5vw 4.5vw;
+                            font-size: 3.5vw;
+                            margin-top: 6vw;
+                            border-radius: 5vw;
+    
+                        }
+                    }
+                }
 
-                        label {
+                .right-sec-loc {
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 8vw;
+                    .sec-mail {
+                        padding-top: 4vw;
+                        h4 {
+                            font-size: 3vw;
+                            padding-bottom: 0.5vw;
+                        }
+                        li {
                             font-size: 2.5vw;
-                            left: 4.5vw;
-                            top: -1.7vw;
-                            padding-left: 2vw;
-                            padding-right: 2vw;
-
                         }
-
                     }
-                }
 
-                .part-two {
-                    margin-bottom: 5vw;
-
-                    .in-bar {
-
-                        input {
-                            width: 100%;
-                            padding: 3vw;
-                            border-radius: 5.5vw;
+                    .sec-location {
+                        padding-top: 4vw;
+                        h4 {
+                            font-size: 3vw;
+                            padding-bottom: 0.5vw;
 
                         }
-
-                        label {
+                        li {
                             font-size: 2.5vw;
-                            left: 4.5vw;
-                            top: -1.7vw;
-                            padding-left: 2vw;
-                            padding-right: 2vw;
 
                         }
-
                     }
-                }
 
-                .part-three {
-
-                    .in-bar {
-                        textarea {
-                            width: 100%;
-                            padding: 3vw;
-                            border-radius: 5.5vw;
+                    .sec-working-hrs {
+                        padding-top: 4vw;
+                        h4 {
+                            font-size: 3vw;
+                            padding-bottom: 0.5vw;
 
                         }
-
-                        label {
+                        p {
                             font-size: 2.5vw;
-                            left: 4.5vw;
-                            top: -1.7vw;
-                            padding-left: 2vw;
-                            padding-right: 2vw;
+
+                        }
+                        li {
+                            font-size: 2.5vw;
 
                         }
                     }
-
                 }
-
-                .sbmt-btn {
-                    button {
-                        padding: 2.5vw 4.5vw;
-                        font-size: 3.5vw;
-                        margin-top: 6vw;
-                        border-radius: 5vw;
-
-                    }
-                }
+    
             }
 
 
@@ -715,7 +847,7 @@
     }
 
 
-    //---------------FOOTER-CONTAINER 600PX--------------------
+    //---------------FOOTER-CONTAINER 770PX--------------------
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -812,6 +944,7 @@
 
                 li {
                     font-size: 3vw;
+                    text-align: center;
                 }
             }
         }
@@ -833,9 +966,6 @@
             height: 18vw;
 
             .logo {
-                // .ri-lock-unlock-fill {
-                //     font-size: 8vw;
-                // }
 
 
                 h2 {
@@ -845,6 +975,10 @@
                         font-weight: 900;
     
                     }
+                    .dot {
+                        font-size: 4vw;
+                    }
+
                 }
             }
 
@@ -856,37 +990,24 @@
                 display: block;
                 font-size: 9vw;
                 font-weight: 900;
-                color: @sky-blu;
 
-                &:hover {
-                    text-shadow: 1.5px 1.5px 5px gray;
-                    transition: 0.5s;
-                }
             }
         }
         .drop-down {
-            display: none;
             width: 95%;
-            background-color: #A1CCD1;
-            padding-top: 18vw;
-            position: fixed;
-            text-align: center;
-            z-index: 100;
-            padding-bottom: 4vw;
+            padding: 18vw 0;
             border-bottom-left-radius: 2vw;
             border-bottom-right-radius: 2vw;
+
             h3 {
-                padding-top: 6vw;
-    
+                padding-top: 10vw;
+
                 a {
-                    text-decoration: none;
-                    font-size: 4vw;
-                    color: @dark-gray;
-                    font-family: @monst;
+                    font-size: 6vw;
                     font-weight: 600;
                 }
             }
-    
+
         }
     
     }
@@ -906,8 +1027,8 @@
             width: 100%;
             height: 100%;
             margin-top: 10vw;
-            padding-top: 4vw;
-            padding-bottom: 6vw;
+            padding-top: 8vw;
+            padding-bottom: 8vw;
 
 
             h3 {
@@ -922,98 +1043,148 @@
 
             h4 {
                 li {
-                    font-size: 2.8vw;
+                    font-size: 3vw;
 
                 }
             }
 
 
-            .inputs {
-                margin-top: 10vw;
-
-                .part-one {
-                    margin-bottom: 7vw;
-                    gap: 7vw;
-
-                    .in-bar {
-                        width: 100%;
-
-                        input {
+            .left-right-sec {
+                .inputs {
+                    margin-top: 8vw;
+                    width: 100%;
+                    height: 100%;
+                    .part-one {
+                        margin-bottom: 5vw;
+                        gap: 5vw;
+    
+                        .in-bar {
                             width: 100%;
-                            padding: 4vw;
-                            border-radius: 6.5vw;
-                            font-size: 4.5vw;
-                        }
-
-                        label {
-                            font-size: 3.5vw;
-                            left: 5.5vw;
-                            top: -2vw;
-                            padding-left: 2.5vw;
-                            padding-right: 2.5vw;
+    
+                            input {
+                                width: 100%;
+                                padding: 3vw;
+                                font-size: 3vw;
+                                border-radius: 5.5vw;
+                            }
+    
+                            label {
+                                font-size: 2.5vw;
+                                left: 4.5vw;
+                                top: -1.7vw;
+                                padding-left: 2vw;
+                                padding-right: 2vw;
+    
+                            }
     
                         }
-
                     }
-                }
+    
+                    .part-two {
+                        margin-bottom: 5vw;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5vw;
 
-                .part-two {
-                    margin-bottom: 7vw;
-
-                    .in-bar {
-
-                        input {
+                        .in-bar {
                             width: 100%;
-                            padding: 4vw;
-                            border-radius: 6.5vw;
-                            font-size: 4.5vw;
-
-                        }
-
-                        label {
-                            font-size: 3.5vw;
-                            left: 5.5vw;
-                            top: -2vw;
-                            padding-left: 2.5vw;
-                            padding-right: 2.5vw;
-
-                        }
-
-                    }
-                }
-
-                .part-three {
-
-                    .in-bar {
-                        textarea {
-                            width: 100%;
-                            padding: 4vw;
-                            border-radius: 6.5vw;
-                            font-size: 4.5vw;
-
-                        }
-
-                        label {
-                            font-size: 3.5vw;
-                            left: 5.5vw;
-                            top: -2vw;
-                            padding-left: 2.5vw;
-                            padding-right: 2.5vw;
-
+                            input {
+                                width: 100%;
+                                padding: 3vw;
+                                border-radius: 5.5vw;
+                                font-size: 3vw;
+                            }
+    
+                            label {
+                                font-size: 2.5vw;
+                                left: 4.5vw;
+                                top: -1.7vw;
+                                padding-left: 2vw;
+                                padding-right: 2vw;
+    
+                            }
+    
                         }
                     }
-
-                }
-
-                .sbmt-btn {
-                    button {
-                        padding: 3vw 5.5vw;
-                        font-size: 4vw;
-                        margin-top: 4vw;
-                        border-radius: 5.5vw;
+    
+                    .part-three {
+                        .in-bar {
+                            textarea {
+                                width: 100%;
+                                padding: 3vw;
+                                border-radius: 5.5vw;
+                                font-size: 3vw;
+                            }
+    
+                            label {
+                                font-size: 2.5vw;
+                                left: 4.5vw;
+                                top: -1.7vw;
+                                padding-left: 2vw;
+                                padding-right: 2vw;
+    
+                            }
+                        }
     
                     }
+    
+                    .sbmt-btn {
+                        button {
+                            padding: 4vw 8vw;
+                            font-size: 3.5vw;
+                            margin-top: 6vw;
+                            border-radius: 6vw;
+    
+                        }
+                    }
                 }
+
+                .right-sec-loc {
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 8vw;
+                    .sec-mail {
+                        padding-top: 4vw;
+                        h4 {
+                            font-size: 6vw;
+                            padding-bottom: 1vw;
+                        }
+                        li {
+                            font-size: 3vw;
+                        }
+                    }
+
+                    .sec-location {
+                        padding-top: 4vw;
+                        h4 {
+                            font-size: 6vw;
+                            padding-bottom: 1vw;
+
+                        }
+                        li {
+                            font-size: 3vw;
+
+                        }
+                    }
+
+                    .sec-working-hrs {
+                        padding-top: 4vw;
+                        h4 {
+                            font-size: 6vw;
+                            padding-bottom: 1vw;
+
+                        }
+                        p {
+                            font-size: 3vw;
+
+                        }
+                        li {
+                            font-size: 3vw;
+
+                        }
+                    }
+                }
+    
             }
 
 

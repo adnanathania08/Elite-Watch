@@ -39,9 +39,9 @@
   font-weight: 600;
   color: #053B50;
 }
-.nav-container .nav-bar .logo h2:hover {
-  text-shadow: 1.5px 1.5px 5px gray;
-  transition: all 0.5s ease-in-out;
+.nav-container .nav-bar .logo h2 .dot {
+  color: #EE6C32;
+  font-size: 2.5vw;
 }
 .nav-container .nav-bar .nav-contents {
   display: flex;
@@ -64,12 +64,12 @@
   font-size: 1.3vw;
   font-weight: 700;
   border: none;
-  background-color: #A1CCD1;
+  background-color: #EE6C32;
   color: #fff;
   border-radius: 25px;
 }
 .nav-container .nav-bar .nav-contents button:hover {
-  background-color: #053B50;
+  background-color: #B54F27;
   transition: all 0.3s ease-in-out;
 }
 .nav-container .nav-bar .ri-menu-3-fill {
@@ -84,23 +84,21 @@
   margin: 0 auto;
   padding-top: 10vw;
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .contact-container .left-sec {
-  width: 50%;
+  width: 100%;
   height: 100%;
 }
 .contact-container .left-sec .gmap_iframe {
-  border-radius: 3.2vw;
+  border-radius: 2vw;
 }
 .contact-container .right-sec {
-  width: 48%;
+  width: 100%;
   height: 100%;
   padding: 2.5vw;
   background-color: #E9E5D9;
-  border-radius: 3.5vw;
+  border-radius: 2vw;
+  margin-top: 6vw;
 }
 .contact-container .right-sec h3 {
   font-size: 1.3vw;
@@ -123,20 +121,28 @@
   color: #505050;
   line-height: 1.5;
 }
-.contact-container .right-sec .inputs {
-  margin-top: 3vw;
+.contact-container .right-sec .left-right-sec {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top: 3vw;
+  justify-content: space-between;
 }
-.contact-container .right-sec .inputs .part-one {
+.contact-container .right-sec .left-right-sec .inputs {
+  width: 50%;
+  height: 100%;
+}
+.contact-container .right-sec .left-right-sec .inputs .part-one {
   display: flex;
   margin-bottom: 2vw;
   gap: 1.5vw;
 }
-.contact-container .right-sec .inputs .part-one .in-bar {
+.contact-container .right-sec .left-right-sec .inputs .part-one .in-bar {
   width: 60%;
   max-width: 100%;
   position: relative;
 }
-.contact-container .right-sec .inputs .part-one .in-bar input {
+.contact-container .right-sec .left-right-sec .inputs .part-one .in-bar input {
   background: transparent;
   width: 100%;
   padding: 1vw;
@@ -147,7 +153,7 @@
   font-weight: 400;
   color: #505050;
 }
-.contact-container .right-sec .inputs .part-one .in-bar label {
+.contact-container .right-sec .left-right-sec .inputs .part-one .in-bar label {
   position: absolute;
   top: -0.7vw;
   background-color: #E9E5D9;
@@ -157,19 +163,19 @@
   font-family: 'Montserrat';
   font-size: 1vw;
   font-weight: 600;
-  color: #505050;
+  color: #176B87;
 }
-.contact-container .right-sec .inputs .part-two {
+.contact-container .right-sec .left-right-sec .inputs .part-two {
   display: flex;
   margin-bottom: 3vw;
   gap: 1.5vw;
 }
-.contact-container .right-sec .inputs .part-two .in-bar {
+.contact-container .right-sec .left-right-sec .inputs .part-two .in-bar {
   width: 60%;
   max-width: 100%;
   position: relative;
 }
-.contact-container .right-sec .inputs .part-two .in-bar input {
+.contact-container .right-sec .left-right-sec .inputs .part-two .in-bar input {
   background: transparent;
   width: 100%;
   padding: 1vw;
@@ -180,7 +186,7 @@
   font-weight: 400;
   color: #505050;
 }
-.contact-container .right-sec .inputs .part-two .in-bar label {
+.contact-container .right-sec .left-right-sec .inputs .part-two .in-bar label {
   position: absolute;
   top: -0.7vw;
   background-color: #E9E5D9;
@@ -190,14 +196,14 @@
   font-family: 'Montserrat';
   font-size: 1vw;
   font-weight: 600;
-  color: #505050;
+  color: #176B87;
 }
-.contact-container .right-sec .inputs .part-three .in-bar {
+.contact-container .right-sec .left-right-sec .inputs .part-three .in-bar {
   width: 100%;
   max-width: 100%;
   position: relative;
 }
-.contact-container .right-sec .inputs .part-three .in-bar textarea {
+.contact-container .right-sec .left-right-sec .inputs .part-three .in-bar textarea {
   background: transparent;
   width: 100%;
   padding: 1vw;
@@ -208,7 +214,7 @@
   font-weight: 400;
   color: #505050;
 }
-.contact-container .right-sec .inputs .part-three .in-bar label {
+.contact-container .right-sec .left-right-sec .inputs .part-three .in-bar label {
   position: absolute;
   top: -0.7vw;
   background-color: #E9E5D9;
@@ -218,26 +224,96 @@
   font-family: 'Montserrat';
   font-size: 1vw;
   font-weight: 600;
-  color: #505050;
+  color: #176B87;
 }
-.contact-container .right-sec .inputs .sbmt-btn {
+.contact-container .right-sec .left-right-sec .inputs .sbmt-btn {
   text-align: center;
   margin-top: 2vw;
 }
-.contact-container .right-sec .inputs .sbmt-btn button {
+.contact-container .right-sec .left-right-sec .inputs .sbmt-btn button {
   padding: 1.3vw 2.6vw;
   color: #3B4D57;
-  background: transparent;
+  background: #A1CCD1;
   border-radius: 4vw;
   font-size: 1.3vw;
   font-weight: 600;
   font-family: 'Montserrat';
   border: none;
-  border: 2px solid #3B4D57;
 }
-.contact-container .right-sec .inputs .sbmt-btn button:hover {
-  box-shadow: 0 0 0.5vw gray inset;
+.contact-container .right-sec .left-right-sec .inputs .sbmt-btn button:hover {
+  box-shadow: 0 0 0.5vw gray;
   transition: all 0.5 ease-in-out;
+}
+.contact-container .right-sec .right-sec-loc {
+  width: 45%;
+  height: 100%;
+}
+.contact-container .right-sec .right-sec-loc .sec-mail h4 {
+  font-size: 1.5vw;
+  font-family: 'Poppins';
+  padding-bottom: 0.3vw;
+  color: #053B50;
+}
+.contact-container .right-sec .right-sec-loc .sec-mail li {
+  font-size: 1.3vw;
+  font-family: 'Montserrat';
+  color: #505050;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.contact-container .right-sec .right-sec-loc .sec-mail li span {
+  font-weight: 900;
+  font-family: 'Poppins';
+}
+.contact-container .right-sec .right-sec-loc .sec-mail li a {
+  color: #176B87;
+  text-decoration: none;
+}
+.contact-container .right-sec .right-sec-loc .sec-mail li a:hover {
+  color: blue;
+}
+.contact-container .right-sec .right-sec-loc .sec-location {
+  padding-top: 2vw;
+}
+.contact-container .right-sec .right-sec-loc .sec-location h4 {
+  font-size: 1.5vw;
+  font-family: 'Poppins';
+  padding-bottom: 0.3vw;
+  color: #053B50;
+}
+.contact-container .right-sec .right-sec-loc .sec-location li {
+  font-size: 1.3vw;
+  font-family: 'Montserrat';
+  color: #505050;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.contact-container .right-sec .right-sec-loc .sec-working-hrs {
+  padding-top: 2vw;
+}
+.contact-container .right-sec .right-sec-loc .sec-working-hrs h4 {
+  font-size: 1.5vw;
+  font-family: 'Poppins';
+  padding-bottom: 0.3vw;
+  color: #053B50;
+}
+.contact-container .right-sec .right-sec-loc .sec-working-hrs p {
+  font-size: 1.3vw;
+  font-family: 'Montserrat';
+  color: #505050;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.contact-container .right-sec .right-sec-loc .sec-working-hrs li {
+  font-size: 1.3vw;
+  font-family: 'Montserrat';
+  color: #505050;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.contact-container .right-sec .right-sec-loc .sec-working-hrs li span {
+  font-weight: 900;
+  font-family: 'Poppins';
 }
 .footer-container {
   display: flex;
@@ -372,7 +448,14 @@
   font-size: 1.5vw;
   font-weight: 700;
 }
-@media (max-width: 600px) {
+.footer-container .office .address li a {
+  text-decoration: none;
+  color: #000;
+}
+.footer-container .office .address li a:hover {
+  color: blue;
+}
+@media (max-width: 770px) {
   .nav-container .nav-bar {
     align-items: center;
     position: fixed;
@@ -385,6 +468,9 @@
     font-size: 4.5vw;
     font-weight: 900;
   }
+  .nav-container .nav-bar .logo h2 .dot {
+    font-size: 4vw;
+  }
   .nav-container .nav-bar .nav-contents {
     display: none;
   }
@@ -392,19 +478,15 @@
     display: block;
     font-size: 7vw;
     font-weight: 900;
-    color: #A1CCD1;
-  }
-  .nav-container .nav-bar .ri-menu-3-fill:hover {
-    text-shadow: 1.5px 1.5px 5px gray;
-    transition: 0.5s;
+    color: #EE6C32;
   }
   .nav-container .drop-down {
     display: none;
     width: 95%;
     z-index: 100;
+    padding-top: 16vw;
     background-color: #A1CCD1;
     position: fixed;
-    padding-top: 16vw;
     text-align: center;
     padding-bottom: 4vw;
     border-bottom-left-radius: 2vw;
@@ -438,6 +520,7 @@
     width: 100%;
     height: 100%;
     margin-top: 8vw;
+    padding: 8vw 6vw;
   }
   .contact-container .right-sec h3 {
     font-size: 3vw;
@@ -450,10 +533,18 @@
   .contact-container .right-sec h4 li {
     font-size: 2.5vw;
   }
-  .contact-container .right-sec .inputs {
-    margin-top: 8vw;
+  .contact-container .right-sec .left-right-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .contact-container .right-sec .inputs .part-one {
+  .contact-container .right-sec .left-right-sec .inputs {
+    margin-top: 8vw;
+    width: 100%;
+    height: 100%;
+  }
+  .contact-container .right-sec .left-right-sec .inputs .part-one {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -462,53 +553,94 @@
     margin-bottom: 5vw;
     gap: 5vw;
   }
-  .contact-container .right-sec .inputs .part-one .in-bar {
+  .contact-container .right-sec .left-right-sec .inputs .part-one .in-bar {
     width: 100%;
   }
-  .contact-container .right-sec .inputs .part-one .in-bar input {
+  .contact-container .right-sec .left-right-sec .inputs .part-one .in-bar input {
     width: 100%;
     padding: 3vw;
+    font-size: 2.5vw;
     border-radius: 5.5vw;
   }
-  .contact-container .right-sec .inputs .part-one .in-bar label {
+  .contact-container .right-sec .left-right-sec .inputs .part-one .in-bar label {
     font-size: 2.5vw;
     left: 4.5vw;
     top: -1.7vw;
     padding-left: 2vw;
     padding-right: 2vw;
   }
-  .contact-container .right-sec .inputs .part-two {
+  .contact-container .right-sec .left-right-sec .inputs .part-two {
     margin-bottom: 5vw;
   }
-  .contact-container .right-sec .inputs .part-two .in-bar input {
+  .contact-container .right-sec .left-right-sec .inputs .part-two .in-bar input {
     width: 100%;
     padding: 3vw;
     border-radius: 5.5vw;
+    font-size: 2.5vw;
   }
-  .contact-container .right-sec .inputs .part-two .in-bar label {
+  .contact-container .right-sec .left-right-sec .inputs .part-two .in-bar label {
     font-size: 2.5vw;
     left: 4.5vw;
     top: -1.7vw;
     padding-left: 2vw;
     padding-right: 2vw;
   }
-  .contact-container .right-sec .inputs .part-three .in-bar textarea {
+  .contact-container .right-sec .left-right-sec .inputs .part-three .in-bar textarea {
     width: 100%;
     padding: 3vw;
     border-radius: 5.5vw;
+    font-size: 2.5vw;
   }
-  .contact-container .right-sec .inputs .part-three .in-bar label {
+  .contact-container .right-sec .left-right-sec .inputs .part-three .in-bar label {
     font-size: 2.5vw;
     left: 4.5vw;
     top: -1.7vw;
     padding-left: 2vw;
     padding-right: 2vw;
   }
-  .contact-container .right-sec .inputs .sbmt-btn button {
+  .contact-container .right-sec .left-right-sec .inputs .sbmt-btn button {
     padding: 2.5vw 4.5vw;
     font-size: 3.5vw;
     margin-top: 6vw;
     border-radius: 5vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc {
+    width: 100%;
+    height: 100%;
+    padding-top: 8vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-mail {
+    padding-top: 4vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-mail h4 {
+    font-size: 3vw;
+    padding-bottom: 0.5vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-mail li {
+    font-size: 2.5vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-location {
+    padding-top: 4vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-location h4 {
+    font-size: 3vw;
+    padding-bottom: 0.5vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-location li {
+    font-size: 2.5vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-working-hrs {
+    padding-top: 4vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-working-hrs h4 {
+    font-size: 3vw;
+    padding-bottom: 0.5vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-working-hrs p {
+    font-size: 2.5vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-working-hrs li {
+    font-size: 2.5vw;
   }
   .footer-container {
     display: flex;
@@ -582,6 +714,7 @@
   }
   .footer-container .office .address li {
     font-size: 3vw;
+    text-align: center;
   }
 }
 @media (max-width: 420px) {
@@ -597,6 +730,9 @@
     font-size: 6vw;
     font-weight: 900;
   }
+  .nav-container .nav-bar .logo h2 .dot {
+    font-size: 4vw;
+  }
   .nav-container .nav-bar .nav-contents {
     display: none;
   }
@@ -604,32 +740,18 @@
     display: block;
     font-size: 9vw;
     font-weight: 900;
-    color: #A1CCD1;
-  }
-  .nav-container .nav-bar .ri-menu-3-fill:hover {
-    text-shadow: 1.5px 1.5px 5px gray;
-    transition: 0.5s;
   }
   .nav-container .drop-down {
-    display: none;
     width: 95%;
-    background-color: #A1CCD1;
-    padding-top: 18vw;
-    position: fixed;
-    text-align: center;
-    z-index: 100;
-    padding-bottom: 4vw;
+    padding: 18vw 0;
     border-bottom-left-radius: 2vw;
     border-bottom-right-radius: 2vw;
   }
   .nav-container .drop-down h3 {
-    padding-top: 6vw;
+    padding-top: 10vw;
   }
   .nav-container .drop-down h3 a {
-    text-decoration: none;
-    font-size: 4vw;
-    color: #505050;
-    font-family: 'Montserrat';
+    font-size: 6vw;
     font-weight: 600;
   }
   .contact-container {
@@ -643,8 +765,8 @@
     width: 100%;
     height: 100%;
     margin-top: 10vw;
-    padding-top: 4vw;
-    padding-bottom: 6vw;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
   }
   .contact-container .right-sec h3 {
     font-size: 4vw;
@@ -655,65 +777,111 @@
     padding-bottom: 6vw;
   }
   .contact-container .right-sec h4 li {
-    font-size: 2.8vw;
+    font-size: 3vw;
   }
-  .contact-container .right-sec .inputs {
-    margin-top: 10vw;
+  .contact-container .right-sec .left-right-sec .inputs {
+    margin-top: 8vw;
+    width: 100%;
+    height: 100%;
   }
-  .contact-container .right-sec .inputs .part-one {
-    margin-bottom: 7vw;
-    gap: 7vw;
+  .contact-container .right-sec .left-right-sec .inputs .part-one {
+    margin-bottom: 5vw;
+    gap: 5vw;
   }
-  .contact-container .right-sec .inputs .part-one .in-bar {
+  .contact-container .right-sec .left-right-sec .inputs .part-one .in-bar {
     width: 100%;
   }
-  .contact-container .right-sec .inputs .part-one .in-bar input {
+  .contact-container .right-sec .left-right-sec .inputs .part-one .in-bar input {
     width: 100%;
-    padding: 4vw;
-    border-radius: 6.5vw;
-    font-size: 4.5vw;
-  }
-  .contact-container .right-sec .inputs .part-one .in-bar label {
-    font-size: 3.5vw;
-    left: 5.5vw;
-    top: -2vw;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-  }
-  .contact-container .right-sec .inputs .part-two {
-    margin-bottom: 7vw;
-  }
-  .contact-container .right-sec .inputs .part-two .in-bar input {
-    width: 100%;
-    padding: 4vw;
-    border-radius: 6.5vw;
-    font-size: 4.5vw;
-  }
-  .contact-container .right-sec .inputs .part-two .in-bar label {
-    font-size: 3.5vw;
-    left: 5.5vw;
-    top: -2vw;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-  }
-  .contact-container .right-sec .inputs .part-three .in-bar textarea {
-    width: 100%;
-    padding: 4vw;
-    border-radius: 6.5vw;
-    font-size: 4.5vw;
-  }
-  .contact-container .right-sec .inputs .part-three .in-bar label {
-    font-size: 3.5vw;
-    left: 5.5vw;
-    top: -2vw;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-  }
-  .contact-container .right-sec .inputs .sbmt-btn button {
-    padding: 3vw 5.5vw;
-    font-size: 4vw;
-    margin-top: 4vw;
+    padding: 3vw;
+    font-size: 3vw;
     border-radius: 5.5vw;
+  }
+  .contact-container .right-sec .left-right-sec .inputs .part-one .in-bar label {
+    font-size: 2.5vw;
+    left: 4.5vw;
+    top: -1.7vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .contact-container .right-sec .left-right-sec .inputs .part-two {
+    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+  }
+  .contact-container .right-sec .left-right-sec .inputs .part-two .in-bar {
+    width: 100%;
+  }
+  .contact-container .right-sec .left-right-sec .inputs .part-two .in-bar input {
+    width: 100%;
+    padding: 3vw;
+    border-radius: 5.5vw;
+    font-size: 3vw;
+  }
+  .contact-container .right-sec .left-right-sec .inputs .part-two .in-bar label {
+    font-size: 2.5vw;
+    left: 4.5vw;
+    top: -1.7vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .contact-container .right-sec .left-right-sec .inputs .part-three .in-bar textarea {
+    width: 100%;
+    padding: 3vw;
+    border-radius: 5.5vw;
+    font-size: 3vw;
+  }
+  .contact-container .right-sec .left-right-sec .inputs .part-three .in-bar label {
+    font-size: 2.5vw;
+    left: 4.5vw;
+    top: -1.7vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .contact-container .right-sec .left-right-sec .inputs .sbmt-btn button {
+    padding: 4vw 8vw;
+    font-size: 3.5vw;
+    margin-top: 6vw;
+    border-radius: 6vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc {
+    width: 100%;
+    height: 100%;
+    padding-top: 8vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-mail {
+    padding-top: 4vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-mail h4 {
+    font-size: 6vw;
+    padding-bottom: 1vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-mail li {
+    font-size: 3vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-location {
+    padding-top: 4vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-location h4 {
+    font-size: 6vw;
+    padding-bottom: 1vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-location li {
+    font-size: 3vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-working-hrs {
+    padding-top: 4vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-working-hrs h4 {
+    font-size: 6vw;
+    padding-bottom: 1vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-working-hrs p {
+    font-size: 3vw;
+  }
+  .contact-container .right-sec .left-right-sec .right-sec-loc .sec-working-hrs li {
+    font-size: 3vw;
   }
   .footer-container {
     padding: 6vw;
