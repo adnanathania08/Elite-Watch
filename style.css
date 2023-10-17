@@ -254,7 +254,10 @@
   text-align: center;
   gap: 2vw;
 }
-.main-container .seventh-container .nine-cards h3 {
+.main-container .seventh-container .nine-cards a {
+  text-decoration: none;
+}
+.main-container .seventh-container .nine-cards a h3 {
   border-radius: 1.5vw;
   padding: 1vw;
   background-color: #A1CCD1;
@@ -264,7 +267,7 @@
   font-weight: 700;
   line-height: 1.8;
 }
-.main-container .seventh-container .nine-cards h3:hover {
+.main-container .seventh-container .nine-cards a h3:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
@@ -713,7 +716,7 @@
     gap: 4vw;
     padding: 0 4vw;
   }
-  .main-container .seventh-container .nine-cards h3 {
+  .main-container .seventh-container .nine-cards a h3 {
     font-size: 3vw;
     padding: 3vw;
   }
@@ -1017,7 +1020,7 @@
     gap: 6vw;
     padding: 0 6vw;
   }
-  .main-container .seventh-container .nine-cards h3 {
+  .main-container .seventh-container .nine-cards a h3 {
     font-size: 4vw;
     padding: 4vw;
   }
