@@ -50,7 +50,7 @@
 }
 .main-container .nav-bar .nav-contents h3 a {
   font-size: 1.3vw;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   color: #505050;
 }
@@ -59,17 +59,13 @@
   transition: all 0.3s ease-in-out;
   text-decoration: underline #176B87;
 }
-.main-container .nav-bar .nav-contents button {
-  padding: 1vw 2vw;
-  font-size: 1.3vw;
-  font-weight: 700;
-  border: none;
-  background-color: #EE6C32;
-  color: #fff;
-  border-radius: 25px;
+.main-container .nav-bar .nav-contents .cnc-no {
+  font-size: 1.4vw;
+  font-weight: 900;
 }
-.main-container .nav-bar .nav-contents button:hover {
-  background-color: #B54F27;
+.main-container .nav-bar .nav-contents .cnc-no:hover {
+  color: #B54F27;
+  text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 .main-container .nav-bar .ri-menu-3-fill {
